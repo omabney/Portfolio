@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Week 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2>Arrays, Logic, and Loops</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+
+                        <li id="sub-Topic">Array
+                            <ul id = "sub-list">
+
+                                <li id="lists">
+                                    An array is an ordered list of values.
+                                </li>
+
+                                <li id="lists">
+                                    created by = [] or new Array()
+                                </li>
+
+                                <li id="lists">
+                                    Array is typeof 'object'
+                                </li>
+
+                                <li id="lists">
+                                    Destructuring Arrays
+                                    <ul id="sub-list">
+                                        <li id="lists">
+                                            Destructuring an array is the concept of taking values out of an array and presenting them as individual values.
+                                        </li>
+
+                                        <li id="lists">
+                                            const [x,y] = [1,2];
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li id="lists">
+                                    Array Properties and Methods
+                                    <ul id="sub-list">
+                                        <li id="lists">
+                                            .length - if you set array = to length < original, other items with be removed
+                                        </li>
+
+                                        <li id="lists">
+                                            pop(), shift(), unshift(), push()
+                                        </li>
+
+                                        <li id="lists">
+                                            concat(), spread operator: ... can also be used to flatten arrays
+                                        </li>
+
+                                        <li id="lists">
+                                            join(): separates array by "," by default
+                                        </li>
+
+                                        <li id="lists">
+                                            slice(), splice(): same as slice(), but actually removes items from array and returns it as a subarray
+                                        </li>
+
+                                        <li id="lists">
+                                            reverse(), sort() - change order of array permanately
+                                        </li>
+
+                                        <li id="lists">
+                                            indexOf()
+                                        </li>
+
+                                        <li id="lists">
+                                            include()
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Sets
+                            <ul id = "sub-list">
+
+                                <li id="lists">
+                                    Cannot include duplicate values and Do not have index notation
+                                </li>
+
+                                <li id="lists">
+                                    created by new Set()
+                                </li>
+
+                                <li id="lists">
+                                    Set Methods
+                                    <ul id="sub-list">
+                                        <li id="lists">
+                                            .size() - The number of values in a set can be found 
+                                        </li>
+
+                                        <li id="lists">
+                                            has() - to check if a value is in a set.
+                                        </li>
+
+                                        <li id="lists">
+                                            delete() - used to remove a value from a set.
+                                        </li>
+
+                                        <li id="lists">
+                                            clear() - used to remove all values from a set.
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li id="lists">
+                                    Converting Sets to Arrays
+                                    <ul id="sub-list">
+                                        <li id="lists">
+                                            const shoppingSet = new Set().add('Apples').add('Bananas').add('Beans');<br>
+                                            const shoppingArray = Array.from(shoppingSet);
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Weak Sets
+                            <ul id = "sub-list">
+
+                                <li id="lists">
+                                    object in set exists in set even if original reference removed
+                                </li>
+
+                                <li id="lists">
+                                    garbage-collection automatically removing items no longer required by the program.
+                                </li>
+
+                                <li id="lists">
+                                    weak sets garbage collect any references to a 'dead object' w/ orginal reference removed
+                                </li>
+
+                                <li id="lists">
+                                    new WeakSet().
+                                </li>
+
+                                <li id="lists">
+                                    only non-primitive data types
+                                </li>
+
+                                <li id="lists">
+                                    cannot access list of values in weak set
+                                </li>
+
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Maps
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    A list of key and value pairs
+                                </li>
+
+                                <li id="lists">
+                                    Other than objects in Maps key can be of any type.
+                                </li>
+
+                                <li id="lists">
+                                    new map is created by -> new Map()
+                                </li>
+
+                                <li id="lists">
+                                    use get()to retrieve values
+                                </li>
+                                <li id="lists">
+                                    has(), size(), get(), delete(), clear()
+                                </li>
+                                <li id="lists">
+                                    can be converted to array using spread operator or Array.from()
+                                </li>
+
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Weak Maps
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    work the same as weak sets
+                                </li>
+
+                                <li id="lists">
+                                    Created by -> new WeakMap()
+                                </li>
+
+                                <li id="lists">
+                                    can use all same methods in regular map except size()
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Logic
+                            <ul id = "sub-list">
+
+                                <li id="lists">
+                                    if Statements
+                                </li>
+                                
+                                <li id="lists">
+                                    else Statements
+                                </li>
+
+                                <li id="lists">
+                                    Ternary Operator
+                                </li>
+
+                                <li id="lists">
+                                    Switch Statements
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Loops
+                            <ul id = "sub-list">
+
+                                <li id="lists">
+                                    While Loops
+                                </li>
+                                
+                                <li id="lists">
+                                    Infinite Loops
+                                </li>
+
+                                <li id="lists">
+                                    do ... while Loops
+                                </li>
+
+                                <li id="lists">
+                                    For Loops
+                                </li>
+
+                                <li id="lists">
+                                    Nested for Loops
+                                </li>
+
+                            </ul>
+                        </li><br><hr>
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

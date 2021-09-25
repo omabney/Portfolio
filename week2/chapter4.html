@@ -1,0 +1,223 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Week 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2>Functions</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+
+                        <li id="sub-Topic">Defining functions
+                            <ul id = "sub-list">
+
+                                <li id="lists">
+                                    function in javaScript considered to "first-class objects"
+                                </li>
+
+                                <li id="lists">
+                                    Function x(){}
+                                </li>
+
+                                <li id="lists">
+                                    Function expressions anonymous function set to variable- has semincolon afer }
+                                </li>
+
+                                <li id="lists">
+                                    each function has "name" property
+                                </li>
+
+                                <li id="lists">
+                                    Function constructor new Function();
+                                    <ul id="sub-list">
+                                        <li id="lists">
+                                            Not recommended to declare functions in this way as there are numerous problems associated with placing the function body inside a string.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Invoking a function
+                            <ul id = "sub-list">
+
+                                <li id="lists">
+                                    Invoking a function is to run the code inside the function’s body.
+                                </li>
+
+                                <li id="lists">
+                                    To invoke a function, simply enter its name, followed by parentheses.
+                                </li>
+
+                                <li id="lists">
+                                    functions helps to Keep Your Code DRY
+                                    <ul id="sub-list">
+                                        <li id="lists">
+                                            Don’t Repeat Yourself, or DRY, is a principle of programming that specifies that every part of a program should only be written once. 
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Return values
+                            <ul id = "sub-list">
+
+                                <li id="lists">
+                                    All functions return a value, which can be specified using the return statement, which comes after the return keyword.
+                                </li>
+
+                                <li id="lists">
+                                    A function that doesn’t explicitly return anything will return undefined by default.
+                                </li>
+
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Parameters and arguments
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Parameters and arguments are terms that are often used interchangeably to represent values provided for the function as an input.
+                                </li>
+
+                                <li id="lists">
+                                    Variable Numbers of Arguments
+                                    <ul id="sub-list">
+                                        <li id="lists">
+                                            Every function has a special variable called arguments. This is an array-like object that contains every argument passed to the function when it is invoked.
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li id="lists">
+                                    Improved Mean Function
+                                    <ul id="sub-list">
+                                        <li id="lists">
+                                            We can use a rest parameter to improve our mean() function so it accepts any number of values.
+                                        </li>
+
+                                        <li id="lists">
+                                            This collects all the arguments that are entered into an array called values.
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li id="lists">
+                                    Default Parameters
+                                    <ul id="sub-list">
+                                        <li id="lists">
+                                            These are values that will be used by the function if no arguments are provided when it is invoked. 
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li id="lists">
+                                    Arrow Functions
+                                    <ul id="sub-list">
+
+                                        <li id="lists">
+                                            Arrow functions make perfect candidates for short, anonymous functions. 
+                                        </li>
+                                        <li id="lists">
+                                            Single parameters don't need putting into parentheses. 
+                                        </li>
+                                        <li id="lists">
+                                            The body of the function doesn't need placing inside a block if it's only one line. 
+                                        </li>
+                                        <li id="lists">
+                                            The return keyword isn't required if the return statement is the only statement in the body of the function. 
+                                        </li>
+                                        <li id="lists">
+                                            They don't bind their own value of this to the function. 
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Function Hoisting
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Functions that are defined using a function declaration are automatically hoisted, meaning they can be invoked before they have been defined.
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Variable Hoisting
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    var keyword hoists variable but not variable assignment.
+                                </li>
+                                <li id="lists">
+                                    something to consider when deciding how to declare functions.
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Callbacks
+                            <ul id = "sub-list">
+
+                                <li id="lists">
+                                    A function passed as a parameter to another function
+                                </li>
+                                
+                                <li id="lists">
+                                    when passed as argument no parenthesis are used
+                                </li>
+
+                                <li id="lists">
+                                    anonymous function can also be passed as argument
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Array Iterators
+                            <ul id = "sub-list">
+
+                                <li id="lists">
+                                    forEach()
+                                </li>
+                                
+                                <li id="lists">
+                                    map()
+                                </li>
+
+                                <li id="lists">
+                                    reduce()
+                                </li>
+
+                                <li id="lists">
+                                    Filter()
+                                </li>
+
+                                <li id="lists">
+                                    Chaining Iterators Together
+                                    <ul id="sub-list">
+                                        <li id="lists">
+                                            The various iterator functions can be used in combination to create some powerful transformations of data stored in arrays.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
