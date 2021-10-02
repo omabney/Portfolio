@@ -1,0 +1,263 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Objects</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2>Objects</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+                        <li id="sub-Topic">Object Literals
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    An object in JavaScript is a self-contained set of related values and functions.
+                                </li>
+                                <li id="lists">
+                                    They act as a collection of named properties.
+                                </li>
+                                <li id="lists">
+                                    If a property’s value
+                                    is a function, it is known as a method.
+                                </li>                            
+                                <li id="lists">Creating Objects
+                                    <ul id = "sub-list">
+                                        <li id="lists">To create an object literal, simply enter a pair of curly braces.</li>
+                                        <li id="example">const spiderman = {};</li>
+                                    </ul>
+                                    <ul id = "sub-list">
+                                        <li id="lists">To create an object using a constructor function.(Not recommended)</li>
+                                        <li id="example">const spiderman = new Object();</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Accessing Properties
+                            <ul id = "sub-list">
+                                <li id="lists">Access the properties of an object using the dot notation
+                                    <ul id = "sub-list">
+                                        <li id="example">superman.name</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Can also access an object’s properties using bracket notation
+                                    <ul id = "sub-list">
+                                        <li id="example">superman['name']</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Computed Properties
+                                    <ul id = "sub-list">
+                                        <li id="lists">Ability to create objects with computed property keys</li>
+                                    </ul>
+                                    <ul id = "sub-list">
+                                        <li id="lists">JavaScript code can be placed inside square brackets and the property key will be the return value of that code. </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Calling Methods
+                                    <ul id = "sub-list">
+                                        <li id="lists">An object’s method we can also use dot or bracket notation.</li>
+                                        <li id="example">superman.fly()</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                        The in operator can be used to check whether an object has a particular property. 
+                                </li>
+                                <li id="lists">
+                                    Object.keys() method will return an array of all the keys of any object that is provided as an argument.
+                                </li>
+                                <li id="lists">
+                                    The Object.values() returns an array of all the object's value.
+                                </li>
+                                <li id="lists">
+                                    Object.entries() returns an array of key-value pairs. 
+                                </li>
+                                <li id="lists">
+                                    New properties and methods can be added to objects by simply assigning a value to the new property.
+                                    <ul id ="sub-list">
+                                        <li id="example">superman.city = 'Metropolis';</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Change the properties by 
+                                    <ul id = "sub-list">
+                                        <li id="example">superman['real name'] = 'Kal-El';</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Any property can be removed from an object using the delete operator.
+                                    <ul id = "sub-list">
+                                        <li id="example">delete superman.fly</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    It’s even possible for an object to contain other objects. These are known as nested objects.
+                                </li>
+                                <li id="lists">
+                                    if a variable is assigned to an object that already exists, it will simply point to the exact same space in memory.
+                                </li>
+                                <li id="lists">
+                                    An object literal can be passed as a parameter to a function.
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">This
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    The keyword 'this' refers to the object that it is within. It can be used inside methods to gain access to the object’s properties.
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Namespacing
+                            <ul id = "sub-list">
+                                <li id="lists">Naming collisions occur when the same variable or function name is used for different purposes by code sharing the same scope.</li>
+                                <li id="lists">A solution to this problem is to use the object literal pattern to create a namespace for groups of related functions.</li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Built-in Objects
+                            <ul id = "sub-list">
+                                <li id="lists">The two main built-in objects included in JavaScript:
+                                    <ul id = "sub-list">
+                                        <li id="lists">JSON
+                                            <ul id = "sub-list">
+                                                <li id="lists">JSON is a string representation of the object literal notation that we have just seen.</li>
+                                                <li id="lists">The parse() method takes a string of data in JSON format and returns a JavaScript object</li>
+                                                <li id="lists">The stringify() method does the opposite, taking a JavaScript object and returning a string of JSON data</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">The Math Object
+                                            <ul id = "sub-list">
+                                                <li id="lists">
+                                                    The Math object is a built-in object that has several properties representing mathematical constants, as well as methods that carry out a number of common mathematical operations.
+                                                </li>
+                                                <li id="lists">The Math object has eight properties that represent a mix of commonly used math constants.
+                                                    <ol id = "sub-list">
+                                                        <li id="lists">Math.PI</li>
+                                                        <li id="lists">Math.SQRT2</li>
+                                                        <li id="lists">Math.SQRT1_2</li>
+                                                        <li id="lists">Math.E</li>
+                                                        <li id="lists">Math.LN2</li>
+                                                        <li id="lists">Math.LN10</li>
+                                                        <li id="lists">Math.LOG2E</li>
+                                                        <li id="lists">Math.LOG10E</li>
+                                                    </ol>
+                                                </li>
+                                                <li id="lists">The Math object also has several methods to carry out a variety of useful mathematical operations.                                                            
+                                                    <ol id = "sub-list">
+                                                        <li id="lists">Math.abs()</li>
+                                                        <li id="lists">Math.Math.ceil()</li>
+                                                        <li id="lists">Math.floor()</li>
+                                                        <li id="lists">Math.round()</li>
+                                                        <li id="lists">Math.trunc()</li>
+                                                        <li id="lists">Math.exp()</li>
+                                                        <li id="lists">Math.pow()</li>
+                                                        <li id="lists">Math.sqrt()</li>
+                                                        <li id="lists">Math.cbrt()</li>
+                                                        <li id="lists">Math.hypot()</li>
+                                                        <li id="lists">Math.log()</li>
+                                                        <li id="lists">Math.log2()</li>
+                                                        <li id="lists">Math.log10()</li>
+                                                        <li id="lists">Math.max()</li>
+                                                        <li id="lists">Math.min()</li>
+                                                    </ol>
+                                                </li>
+                                                <li id="lists">The Math object also has the standard trigonometric functions:                                                            
+                                                    <ol id = "sub-list">
+                                                        <li id="lists">Math.sin()</li>
+                                                        <li id="lists">Math.cos()</li>
+                                                        <li id="lists">Math.tan()</li>
+                                                        <li id="lists">Math.asin()</li>
+                                                        <li id="lists">Math.acos()</li>
+                                                        <li id="lists">Math.atan()</li>
+                                                        <li id="lists">Math.sinh()</li>
+                                                        <li id="lists">Math.cosh()</li>
+                                                        <li id="lists">Math.tanh()</li>
+                                                    </ol>
+                                                </li>
+                                                <li id="lists">
+                                                    The Math.random() method is used to create random numbers, which can be very useful when writing programs.
+                                                </li>
+                                            </ul>
+                                        </li>    
+                                        <li id="lists">Date objects contain information about dates and times.                                                            
+                                            <ul id = "sub-list">
+                                                <li id="lists">to create a new date object using the new operator.
+                                                    <ul id = "sub-list">
+                                                        <li id="example">const today = new Date();</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li> 
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">The RegExp Object
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    A regular expression is a pattern that can be used to search strings for matches to the pattern. 
+                                </li>
+                                <li id="lists">
+                                    The first, and preferred way, is to use the literal notation of writing the regular expression between forward slashes.
+                                    <ul id = "sub-list">
+                                        <li id="example">const pattern = /[a-zA-Z]+ing$/;</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    You can create a new instance of the RegExp object using the new operator and a constructor function
+                                    <ul id = "sub-list">
+                                        <li id="example">const pattern = new RegExp('[a-zA-Z]+ing');</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    The test() method to see if a string (passed to the method as a parameter) matches the regular expression pattern.
+                                    <ul id = "sub-list">
+                                        <li id="example">pattern.test('joke');</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Regular Expression Properties                                                           
+                                    <ul id = "sub-list">Regular expressions are objects, and have the following properties:
+                                        <li id="lists">The global property makes the pattern return all matches. By default, the pattern only looks for the first occurrence of a match.</li>
+                                        <li id="lists">The ignoreCase property makes the pattern case-insensitive. By default,they are case sensitive.</li>
+                                        <li id="lists">The multiline property makes the pattern multiline. By default, a pattern will stop at the end of a line.</li>
+                                    </ul>
+                                    <ul id = "sub-list">The following flags can be placed after a regular expression literal to change the default properties
+                                        <li id="lists">g sets the global property to true</li>
+                                        <li id="lists">i sets the ignoreCase property to true</li>
+                                        <li id="lists">m sets the multiline property to true</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Special Characters                                                           
+                                    <ul id = "sub-list"> commonly known as metacharacters:
+                                        <li id="lists">. matches any character, except line breaks</li>
+                                        <li id="lists">\w matches any word character, and is equivalent to [A-Za-z0-9_]</li>
+                                        <li id="lists">\W matches any non-word character, and is equivalent to [\^A-Za-z0-9_]</li>
+                                        <li id="lists">\d matches any digit character, and is equivalent to [0-9]</li>
+                                        <li id="lists">\D matches any non-digit character, and is equivalent to [^0-9]</li>
+                                        <li id="lists">\s matches any whitespace character, and is equivalent to [ \t\r\n\f]</li>
+                                        <li id="lists">\S matches any non-whitespace character, and is equivalent to [^\t\r\n\f]</li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li><br><hr>
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2>Document Object Model</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+                        <li id="sub-Topic">Introduction to the DOM
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    DOM represents an HTML document as a network of connected nodes that form a tree-like structure.
+                                </li>
+                                <li id="lists">
+                                    The DOM treats everything on a web page as a node.
+                                </li>
+                                <li id="lists">
+                                    The DOM is not actually part of JavaScript because it is language agnostic.
+                                </li>       
+                                <li id="lists">
+                                    We can use JavaScript to access and modify different parts of a web page using a special built-in object called document.
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Getting Elements
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    The DOM provides several methods that allow us to access any element on a page.
+                                </li>
+                                <li id="lists">
+                                    These methods will return a node object or a node list, which is an array-like object.
+                                </li>
+                               <li id="lists">Legacy DOM Shortcut Methods
+                                    <ul id = "sub-list">
+                                        <li id="lists">Document.body returns the body element of a web page</li>
+                                        <li id="lists">Document.images returns a node list of all the images contained in the document.</li>
+                                        <li id="lists">Document.links returns a node list of all the &lta&gt elements and &ltarea&gt elements that have an href attribute.</li>
+                                        <li id="lists">Document.anchors returns a node list of all the &lta&gt elements that have a name attribute.</li>
+                                        <li id="lists">Document.forms returns a node list of all the forms in the document.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Node lists are array-like objects, but they are not arrays.
+                                </li>
+
+                                <li id="lists">getElementById()
+                                    <ul id = "sub-list">
+                                        <li id="lists">It returns a reference to the element with a unique id attribute that is given as an argument.</li>
+                                        <li id="example">const h1 = document.getElementById('title');</li>
+                                    </ul>
+                                </li>
+
+                                <li id="lists">getElementsByTagName()
+                                    <ul id = "sub-list">
+                                        <li id="lists">It return a live node list of all the elements with the tag name that is provided as an argument.</li>
+                                        <li id="example">const listItems = document.getElementsByTagName('li');</li>
+                                    </ul>
+                                </li>
+
+                                <li id="lists">getElementsByClassName()
+                                    <ul id = "sub-list">
+                                        <li id="lists">It return a live node list of all elements that have the class name that is supplied as an argument.</li>
+                                        <li id="example">const heroes = document.getElementsByClassName('hero');</li>
+                                    </ul>
+                                </li>
+
+                                <li id="lists">document.querySelector()
+                                    <ul id = "sub-list">
+                                        <li id="lists">Allows you to use CSS notation to find the first element in the document that matches that matches a CSS selector provided as an argument.</li>
+                                    </ul>
+                                </li>
+
+                                <li id="lists">document.querySelectorAll() 
+                                    <ul id = "sub-list">
+                                        <li id="lists">uses CSS notation but returns a node list of all the elements in the document that match the CSS query selector. </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">jQuery
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    jQuery is a popular JavaScript framework that makes it very easy to find elements on a page using a CSS-style syntax.
+                                </li>
+                                <li id="lists">
+                                    It uses document.querySelectorAll() in the background whenever it can.
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Navigating the DOM Tree
+                            <ul id = "sub-list">
+                                <li id="lists">Node objects have a number of properties and methods for navigating around the document tree.</li>
+                                <li id="lists">The childNodes property is a list of all the nodes that are children of the node concerned. </li>
+                                <li id="lists">The childNodes property returns all the nodes that are children of an element. </li>
+                                <li id="lists">The firstChild property returns the first child of a node. </li>
+                                <li id="lists">The lastChild property returns the last child of a node </li>
+                                <li id="lists">The parentNode property returns the parent node of an element. </li>
+                                <li id="lists">The nextSibling property returns the next adjacent node of the same parent. </li>
+                                <li id="lists">The previousSibling property returns the previous adjacent node. </li>
+                                <li id="lists">The textContent property returns the text contained within an element. </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Getting and Setting Attributes
+                            <ul id = "sub-list">
+                                <li id="lists">Setting An Element’s Attributes
+                                    <ul id = "sub-list">
+                                        <li id="lists">The setAttribute can change the value of an element’s attributes.</li>
+                                        <li id="example">wonderWoman.setAttribute('class', 'villain');</li>
+                                        <li id="lists">If an element does not have an attribute, the setAttribute method can be used to add it to the element.</li>
+                                        <li id="example">wonderWoman.setAttribute('id','amazon');</li>
+                                        <li id="lists">The add method can be used to add a class to an element without overwriting any classes that already exist.</li>
+                                        <li id="example">wonderWoman.classList.add('warrior');</li>
+                                        <li id="lists">The remove method will remove a specific class from an element.</li>
+                                        <li id="example">wonderWoman.classList.remove('warrior');</li>
+                                        <li id="lists">The toggle method is a particularly useful method that will add a class if an element doesn’t have it already, and remove the class if it does have it.It returns true if the class was added and false if it was removed.</li>
+                                        <li id="example">wonderWoman.classList.toggle('hero'); </li>
+                                        <li id="lists">The contains method will check to see if an element has a particular class.</li>
+                                        <li id="example">wonderWoman.classList.contains('hero');</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Creating Dynamic Markup
+                            <ul id = "sub-list">
+                                <li id="lists">The process to follow each time you want to create a new element with text content is this:                                                          
+                                    <ul id = "sub-list">
+                                        <li id="lists">Create the element node.</li>
+                                        <li id="example">const flash = document.createElement('li');</li>
+                                        <li id="lists">Create the text node.</li>
+                                        <li id="example">const flashText = document.createTextNode('Flash');</li>
+                                        <li id="lists">Append the text node to the element node.</li>
+                                        <li id="example">flash.appendChild(flashText);</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    This can be made simpler by using the textContent property that every element object has. This will add a text node to an element without the need to append it.
+                                    <ul id = "sub-list">
+                                        <li id="example">const flash = document.createElement('li');</li>
+                                        <li id="example">flash.textContent = 'Flash';</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Updating CSS
+                            <ul id = "sub-list">
+                                <li id="lists">Any CSS property names that are separated by dashes must be written in
+                                    camelCase notation, so the dash is removed and the next letter is capitalized
+                                    because dashes are not legal characters in property names.
+                                                                                            
+                                    <ul id = "sub-list">
+                                        <li id="lists"> the CSS property background-color becomes
+                                            backgroundColor. </li>
+                                        <li id="example">superman.style.backgroundColor = 'blue';</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    One particularly useful CSS property often employed is the display property. 
+                                    <ul id = "sub-list">
+                                        <li id="lists">You can hide the superman element with the following code:</li>
+                                        <li id="example">superman.style.display = 'none';</li>
+                                        <li id="lists">The element can be made to 'reappear' by changing the display property back to block:</li>
+                                        <li id="example">superman.style.display = 'block';</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

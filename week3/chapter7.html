@@ -1,0 +1,190 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2>Events</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+                        <li id="sub-Topic">Introduction to events
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Event listeners in JavaScript work like setting a notification to alert you when something happens. 
+                                </li>
+                                <li id="lists">
+                                    The following code can be used to attach an event listener to the document that fires when the user clicks anywhere on the page:
+                                    <ul id = "sub-list">
+                                        <li id="example">document.body.addEventListener("click", doSomething);</li>
+                                    </ul>
+                                </li>      
+                                <li id="lists">The click Event
+                                    <ul id = "sub-list">
+                                        <li id="lists">The click event occurs when a user clicks with the mouse, presses the Enter
+                                            key, or taps the screen, making it a very useful all-round event covering many
+                                            types of interaction.</li>
+                                            <li id="lists">The addEventListener() method is called on a node object, the node to
+                                                which the event listener is being applied.</li>
+                                                <li id="example">document.body.addEventListener('click',doSomething);</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">The Event Object
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Whenever an event handler is triggered by an event, the callback function is called.
+                                </li>
+                                <li id="lists">
+                                    .type returns type of event
+                                </li>
+                                <li id="lists">
+                                    .target returns refernces to node that fired event
+                                </li>
+                                <li id="lists">
+                                    Coordinated of an Event
+                                    <ul id = "sub-list">
+                                        <li id="lists">screenX, screenY</li>
+                                        <li id="lists">clientX, clientY</li>
+                                        <li id="lists">pageX, pageY</li>       
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Mouse Events
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    mousedown, mouseup
+                                </li>
+                                <li id="lists">
+                                    mouseover, mouseout
+                                </li>
+                                <li id="lists">
+                                    mousemove
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Keyboard Events
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    keydown , keypress, keyup
+                                </li>
+                                <li id="lists">
+                                    The information about which key was pressed is a property of the event object.
+                                    <ul id = "sub-list">
+                                        <li id="lists">The keydown event occurs when a key is pressed and will continue to
+                                            occur if the key is held down.</li>       
+                                        <li id="lists"> The keypress event occurs after a keydown event but before a keyup
+                                            event. </li> 
+                                        <li id="lists"> The keyup event occurs when a key is released.</li> 
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Modifier Keys
+                                    <ul id = "sub-list">
+                                        <li id="lists">Pressing the modifier keys such as Shift, Ctrl, Alt and meta (Cmd on Mac)
+                                            will fire the keydown and keyup events, but not the keypress event as they
+                                            don't produce any characters on the screen.</li>       
+                                        <li id="lists">Modifier keys can often already have a purpose assigned in the browser or operating system. And although it’s possible to prevent the default behavior in the browser, it’s not considered best practice to do so. </li> 
+                                        <li id="lists">shiftKey , ctrlKey , altKey , and metaKey</li> 
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Touch Events
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    It’s important to support mouse events as well as touch events, so non-touch devices are also supported
+                                </li>
+                                <li id="lists">
+                                    touchstart
+                                    <ul id = "sub-list">
+                                        <li id="lists">better to use: click event- can be thought of as a "tap" in the context of a touch event</li> 
+                                    </ul>
+                                </li>
+
+                                <li id="lists">
+                                    touchend, touchmove, touchenter, touchleave, touchcancel
+                                </li>
+                                <li id="lists">
+                                    swipe created by using a combination of touchstart , touchmove , and touchleave events 
+                                </li>
+                                <li id="lists">
+                                    Touch Event Properties
+                                    <ul id = "sub-list">
+                                        <li id="lists">touches
+                                            <ul id = "sub-list">
+                                                <li id="lists">also has length property
+                                                    <ul id = "sub-list">
+                                                        <li id="lists">tells how many touch points
+                                                        </li>       
+                                                    </ul>   
+                                                </li>       
+                                                <li id="lists">Each touch object has a number of properties, many similar to the event object</li>
+                                            </ul>
+                                        </li>       
+                                        <li id="lists">.identifier</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+
+
+                        <li id="sub-Topic">Removing Event Listeners
+                            <ul id = "sub-list">
+                                <li id="lists">removeEventListener()</li>
+                                <li id="lists">Note that you shouldn't use anonymous functions as an argument to addEventListener()
+                                     if you want to remove it later. This is because there needs to be a reference to the same function name 
+                                     in the arguments of removeEventListener() . </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Stopping Default Behavior
+                            <ul id = "sub-list">
+                                <li id="lists">preventDefault() is a method of the event object that can be used inside the
+                                    callback function to stop the default behavior happening.</li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Event Propagation
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Bubbling
+                                    <ul id = "sub-list">
+                                        <li id="lists">event.stopPropagation()</li> 
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Capturing
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Event Delegation
+                            <ul id = "sub-list">
+                                <li id="lists">can be used to attach an event listener to a parent element in order to capture events that are triggered by its child elements.</li>
+                            </ul>
+                        </li><br><hr>
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
