@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>OOP in javascript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2>Object-Oriented Programming in JavaScript</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+                        <li id="sub-Topic">An introduction to OOP
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Object-oriented programming is often used to model representations of objects in the real world.
+                                </li>
+                                <li id="lists">
+                                    There are three main concepts in OOP:
+                                    <ul id = "sub-list">
+                                        <li id="lists">encapsulation
+                                            <ul id = "sub-list">
+                                                <li id="lists">The concept of encapsulation: the inner workings are kept hidden inside the object and only the essential functionalities are exposed to the end user</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">polymorphism
+                                            <ul id = "sub-list">
+                                                <li id="lists">The concept of polymorphism: the same process can be used for
+                                                    different objects. In OOP, this means various objects can share the same
+                                                    method, but also have the ability to override shared methods with a more
+                                                    specific implementation.</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">inheritance
+                                            <ul id = "sub-list">
+                                                <li id="lists">The concept of inheritance: taking the features of one object
+                                                    then adding some new features. In OOP, this means we can take an object
+                                                    that already exists and inherit all its properties and methods. </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">classes
+                                    <ul id = "sub-list">
+                                        <li id="lists">Blue print for objects</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Constructor Functions
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    An alternative way to create objects is to use a constructor function.
+                                </li>
+                                <li id="lists">
+                                    This is a function that defines the properties and methods of an object. 
+                                </li>
+                                <li id="lists">
+                                    The keyword this is used to represent the object that will be returned by the constructor function.
+                                </li> 
+                                <li id="lists">
+                                    The parentheses are not required when instantiating a new object using a constructor function.
+                                    <ul id = "sub-list">
+                                        <li id="example">const redDice = new Dice;</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    The parentheses are required, however, if any default arguments need to be provided.
+                                    <ul id = "sub-list">
+                                        <li id="example">const whiteDice = new Dice(4);</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Built-In Constructor Functions
+                                    <ul id = "sub-list">
+                                        <li id="lists">JavaScript contains a number of built-in constructor functions such as
+                                            Object, Array, and Function that can be used to create objects, arrays and functions instead of literals.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists"> New class declaration syntax that does exactly the same
+                                    thing as a constructor function, but looks much similar to writing a class in a
+                                    class-based programming language.
+                                    <ul id = "sub-list">
+                                        <li id="examples">class Dice {<br>
+                                            constructor(sides=6) {<br>
+                                            this.sides = sides;<br>
+                                            }<br>
+                                            roll() {<br>
+                                            return Math.floor(this.sides * Math.random() + 1)<br>
+                                            }<br>
+                                           }<br>
+                                           </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    By convention, the names of constructor functions or class declarations are capitalized
+                                </li>
+                                <li id="lists">The Constructor Property
+                                    <ul id = "sub-list">
+                                        <li id="lists">All objects have a constructor property that returns the constructor function
+                                            that created it</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Static Methods
+                                    <ul id = "sub-list">
+                                        <li id="lists">The static keyword can be used in class declarations to create a static
+                                        method. </li>
+                                        <li id="lists">A static method is called by the class directly rather than by
+                                            instances of the class.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Finding Out the Prototype
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    There are a number of ways to find the prototype of an object.
+                                </li>
+                                <li id="lists">One way is to go via the constructor function’s prototype property. 
+                                    <ul id = "sub-list">
+                                        <li id="examples">raph.constructor.prototype;</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Another way is to use the Object.getPrototypeOf() method, which takes
+                                    the object as a parameter
+                                    <ul id = "sub-list">
+                                        <li id="examples">Object.getPrototypeOf(raph);</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Own Properties and Prototype Properties
+                                    <ul id = "sub-list">
+                                        <li id="lists">Every object has a
+                                            hasOwnProperty() method that can be used to check if a method is its own
+                                            property, or is inherited from the prototype</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Overwriting a Prototype
+                                    <ul id = "sub-list">
+                                        <li id="lists">It is not possible to overwrite the prototype by assigning it to a new object
+                                            literal if class declarations are used</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Overwriting Prototype Properties
+                                    <ul id = "sub-list">
+                                        <li id="lists">An object instance can overwrite any properties or methods inherited from its
+                                            prototype by simply assigning a new value to them. </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Create a class declaration that deals with any initialization, shared properties and methods.
+                                </li>
+                                <li id="lists">
+                                    Any extra methods and properties that need to be augmented to the class declaration
+                                     after it’s been defined can be added to the prototype. 
+                                        These will be added to all instances, even those that have already been created.
+                                </li>
+                                <li id="lists">
+                                    Add any properties or methods that are individual to a particular
+                                        instance can be augmented using assignment to that object
+                                </li>
+                                <li id="lists">
+                                    Be careful when overwriting the prototype completely ― the constructor
+                                        class needs to be reset.
+                                </li>
+
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Public and Private Methods
+                            <ul id = "sub-list">
+                                <li id="lists">An object’s methods are public in JavaScript.</li>
+                                <li id="lists">Methods and properties are said to be public because they can be queried directly and changed by assignment.</li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Inheritance
+                            <ul id = "sub-list">
+                                <li id="lists">Inheritance Using extends
+                                    <ul id = "sub-list">
+                                        <li id="lists">A class can inherit from another class using the extends keyword in a class
+                                            declaration.</li>
+                                        <li id="lists">Inside the child class declaration, the keyword super refers to the parent
+                                            class, and can be used to access any properties and call any methods of the
+                                            parent class.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Polymorphism
+                            <ul id = "sub-list">
+                                <li id="lists">The concept of polymorphism means that different objects can have the same
+                                    method, but implement it in different ways.</li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Adding Methods to Built-in Objects
+                            <ul id = "sub-list">
+                                <li id="lists">It is possible to add more methods to the prototype of JavaScript’s built-in
+                                    objects — such as Number, String, and Array.
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Property Attributes and Descriptors
+                            <ul id = "sub-list">
+                                <li id="lists">Each property has a number of attributes that
+                                    provide information about the property. 
+                                </li>
+                                <li id="lists">All object properties have the following attributes stored in a property
+                                    descriptor:
+                                    <ul id = "sub-list">
+                                        <li id="lists">value ― This is the value of the property and is undefined by default.</li>
+                                        <li id="lists">writable ― This boolean value shows whether a property can be
+                                            changed or not, and is false by default.</li>
+                                        <li id="lists">enumerable ― this boolean value shows whether a property will show
+                                            up when the object is displayed in a for in loop, and is false by
+                                            default.</li>
+                                        <li id="lists">configurable ― this boolean value shows whether you can delete a
+                                            property or change any of its attributes, and is false by default.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Getters and Setters
+                                    <ul id = "sub-list">
+                                        <li id="lists">An object property descriptor can have get() and set() methods instead of a
+                                            value attribute.</li>
+                                        <li id="lists"> All objects must have one or the other, they can't have both.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Creating Objects from Other Objects
+                            <ul id = "sub-list">
+                                <li id="lists">The Object() constructor function has a method called create that can be
+                                    used to create a new object that is an exact copy of the object that is provided
+                                    as an argument.
+                                </li>
+                                <li id="lists">Object Prototype Chain
+                                    <ul id = "sub-list">
+                                        <li id="lists">Creating objects from objects will create a prototype chain.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">The instanceof operator will not work when objects have been created this
+                                    way. It only works when using constructor functions to create objects.
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Mixins
+                            <ul id = "sub-list">
+                                <li id="lists">A mixin is a way of adding properties and methods of some objects to
+                                    another object without using inheritance.
+                                </li>
+                                <li id="lists">Basic mixin functionality is provided by the Object.assign() method.
+                                </li>
+                                <li id="lists">This will assign to the object provided as the first argument all of the properties
+                                    from any objects provided as further arguments.
+                                    <ul id = "sub-list">
+                                        <li id="example">Object.assign(a,b);</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Copying By Reference
+                                    <ul id = "sub-list">
+                                        <li id="lists">When objects are copied by assignment, they are only copied by reference.</li>
+                                        <li id="lists"> object is not actually created in memory; the new reference will just point to the old object. </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Using Mixins to Add Properties
+                                    <ul id = "sub-list">
+                                        <li id="lists">One use for the mixin() function is to add a large number of properties to an
+                                            object all at once.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Factory Functions
+                                    <ul id = "sub-list">
+                                        <li id="lists">A factory function is a function that can be used to return an
+                                            object.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Using the Mixin Function to Add Modular Functionality                                    
+                                    <ul id = "sub-list">
+                                        <li id="lists">Inheritance allows us to add functionality to objects by inheriting properties
+                                            and methods from other objects. </li>
+                                        <li id="lists">The mixin() function lets us encapsulate properties and methods in an object, then add them to other
+                                            objects without the overhead of an inheritance chain being created. </li>
+                                        <li id="lists">One way to think about the difference between prototypal inheritance and inheritance from mixin objects is to consider whether an object is something
+                                            or whether it has something.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Chaining Functions
+                            <ul id = "sub-list">
+                                <li id="lists">If a method returns this, its methods can be chained together to form a
+                                    sequence of method calls that are called one after the other. 
+                                </li>
+                                <li id="lists"> 
+                                    If a method lacks a meaningful return value, it might as well return this so that chaining is possible.
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">This and that
+                            <ul id = "sub-list">
+                                <li id="lists">Binding this
+                                    <ul id = "sub-list">
+                                        <li id="lists">The value of this points to the object calling a method. 
+                                            It allows us to create generalized methods that refer to properties specific to a particular object.</li>
+                                        <li id="lists"> The problem is that
+                                            the value of this loses its scope, and points to the global object inside a
+                                            nested function.</li>
+                                        <li id="lists">There are a couple of solutions to this problem
+                                            <ul id = "sub-list">
+                                                <li id="lists">Use that = this</li>
+                                                <li id="lists">Use bind(this)</li>
+                                                <li id="lists">Use for-of Instead Of forEach()</li>
+                                                <li id="lists">Use Arrow Functions</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">This and that
+                            <ul id = "sub-list">
+                                <li id="lists">Binding this
+                                    <ul id = "sub-list">
+                                        <li id="lists">The value of this points to the object calling a method. 
+                                            It allows us to create generalized methods that refer to properties specific to a particular object.</li>
+                                        <li id="lists"> The problem is that
+                                            the value of this loses its scope, and points to the global object inside a
+                                            nested function.</li>
+                                        <li id="lists">There are a couple of solutions to this problem
+                                            <ul id = "sub-list">
+                                                <li id="lists">Use that = this</li>
+                                                <li id="lists">Use bind(this)</li>
+                                                <li id="lists">Use for-of Instead Of forEach()</li>
+                                                <li id="lists">Use Arrow Functions</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Borrowing Methods from Prototypes
+                            <ul id = "sub-list">
+                                <li id="lists">It’s possible to borrow methods from objects without having to inherit all
+                                    their properties and methods.
+                                </li>
+                                <li id="lists"> 
+                                    This is done by making a reference to the function that you want to borrow.
+                                </li>
+                                <li id="lists">Borrowing Array Methods
+                                    <ul id = "sub-list">
+                                        <li id="lists">One of the most common uses of borrowing methods was to borrow methods
+                                            from arrays</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Composition Over Inheritance
+                                    <ul id = "sub-list">
+                                        <li id="lists">There are a number of benefits to object-oriented programming, but there are
+                                        also some problems that come with inheritance.
+                                        </li>
+                                        <li id="lists">This approach advocates creating small objects that
+                                            describe single tasks or behaviors and using them as the building blocks for
+                                            more complex objects.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

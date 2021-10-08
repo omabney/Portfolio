@@ -24,8 +24,6 @@ const view = {
     hide(element){
       element.style.display = 'none';
     }
-      
-    
 };
 
 const game = {
@@ -64,4 +62,4 @@ const game = {
   }
 }
 
-view.start.addEventListener('click', (event) => game.start(quiz), false);
+view.start.addEventListener('click', () => game.start(quiz), false);

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2>Forms</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+                        <li id="sub-Topic">Form controls
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Forms are made up of a &lt;form&gt; element that contains form controls such as input fields, select menus and buttons.
+                                </li>
+                                <li id="lists">
+                                    when a form was submitted, it would be sent to a server where the information would be processed using a 'back end' language such as PHP or Ruby.
+                                </li>
+                                <li id="lists">
+                                    Each form control has an initial value that can be specified in the HTML code. 
+                                    <ul id = "sub-list">
+                                        <li id="example">
+                                            &lt;form name='search' action='/search'&gt;<br>
+                                                &emsp;&lt;input name='searchInput'&gt;<br>
+                                                &emsp;&lt;button type='submit'&gt;Search&lt;/button&gt;<br>
+                                            &lt;/form&gt;
+                                        </li>
+                                    </ul>
+                                </li>                            
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Accessing Form Elements
+                            <ul id = "sub-list">
+                                <li id="lists">DOM had a useful property called document.forms that returns an HTML collection of all the forms in the document in the order they appear in the markup.
+                                    <ul id = "sub-list">
+                                        <li id="example">const form = document.forms[0];</li>
+                                        <li id="example">const form = document.getElementsByTagname('form')[0];</li>
+                                        <li id="example">const form = document.forms.search;</li>
+                                        <li id="example">const form = document.forms['search'];</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">A form object also has a method called elements that returns an HTML
+                                    collection of all the elements contained in the form. 
+                                    <ul id = "sub-list">
+                                        <li id="example">const [input,button] = form.elements;</li>
+                                        <li id="example">const input = form.searchInput</li>
+                                        <li id="example">const input = form['searchInput']</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Form Properties and Methods
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    form.submit() 
+                                    <ul id = "sub-list">
+                                        <li id="lists">This method will submit the form automatically.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    form.reset() 
+                                    <ul id = "sub-list">
+                                        <li id="lists">This method will reset all the form controls back to their initial
+                                            values specified in the HTML.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    form.action 
+                                    <ul id = "sub-list">
+                                        <li id="lists">This property can be used to set the action attribute of a form,
+                                            so it’s sent to a different URL to be processed on the server</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Form Events
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    focus event 
+                                    <ul id = "sub-list">
+                                        <li id="lists">The focus event occurs when an element is focused on.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    blur event
+                                    <ul id = "sub-list">
+                                        <li id="lists">The blur event occurs when the user moves the focus away from the form
+                                            element.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    change event
+                                    <ul id = "sub-list">
+                                        <li id="lists">The change event occurs when the user moves the focus away from the form
+                                            element after changing it.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Submitting a Form
+                            <ul id = "sub-list">
+                                <li id="lists">The submit event, occurring when
+                                    the form is submitted.</li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Retrieving and Changing Values From a Form
+                            <ul id = "sub-list">
+                                <li id="lists">Text input element objects have a value property that can be used to retrieve
+                                    the text inside the field.</li>
+                                <li id="lists">The placeholder Attribute
+                                    <ul id = "sub-list">
+                                        <li id="example">&lt;input type='text' name='search-box' placeholder='Search Here'&gt;.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Form Controls
+                                    <ul id = "sub-list">
+                                        <li id="lists">Some common types of form control are:</li>
+                                        <ul id = "sub-list">
+                                            <li id="lists">&lt;input&gt; fields, including text, passwords, check boxes, radio buttons,
+                                                and file uploads</li>
+                                            <li id="lists">&lt;select&gt; menus for drop-down lists of options</li>
+                                            <li id="lists">&lt;textarea&gt;elements for longer text entry</li>
+                                            <li id="lists">&lt;button&gt;elements for submitting and resetting forms</li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li id="lists">Input Fields
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Text Input Fields 
+                                            <ul id = "sub-list">
+                                                <li id="lists">The default type of input field is text.</li>
+                                                <li id="example">&lt;input type='text' id ='donation-amount' name='donationAmount' value='1'&gt;</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            Password Input Fields 
+                                            <ul id = "sub-list">
+                                                <li id="lists">input type='password' is used to enter passwords or secret information.</li>
+                                                <li id="example">&lt;input type='password' name='realName' id='realName'&gt;</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            Checkbox Input Fields
+                                            <ul id = "sub-list">
+                                                <li id="lists">Check boxes are created using input fields with type='checkbox'. They are
+                                                    used to select different options that can be checked (true) or left unchecked
+                                                    (false).</li>
+                                                <li id="example">&lt;input type='checkbox' id='flight' value='Flight' name='powers'&gt;</li>
+                                                <li id="lists">In javascript they can be accessed as an HTML collection</li>
+                                                <li id="example">form.powers;</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            Radio Button Input Fields
+                                            <ul id = "sub-list">
+                                                <li id="lists">Radio buttons are created using input fields with type='radio'.</li>
+                                                <li id="lists"> they allow users to check an option as true, but they provide an
+                                                    exclusive choice of options, so only one option can be selected.</li>
+                                                <li id="example">&lt;input type='radio' name='category' value='Hero' id='hero'&gt;</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            Hidden Input Fields
+                                            <ul id = "sub-list">
+                                                <li id="lists">Hidden fields can be created using input fields with type='hidden'. </li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            File Input Fields
+                                            <ul id = "sub-list">
+                                                <li id="lists">A file input field can be created using input fields with type='file'. </li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            Other Input Types
+                                            <ul id = "sub-list">
+                                                <li id="lists">There are lots of new input types included in HTML5, such as number, tel
+                                                    and color.</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            Select Drop-Down List 
+                                            <ul id = "sub-list">
+                                                <li id="lists">Select drop-down lists can be used to select one or more options from a list of
+                                                    values.</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            Text Areas 
+                                            <ul id = "sub-list">
+                                                <li id="lists">A &lt;textarea&gt; element is used to enter long pieces of text over multiple lines
+                                                    such as a comment or blog post. They work in much the same way as input
+                                                    fields.</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            Buttons 
+                                            <ul id = "sub-list">
+                                                <li id="lists">'submit' -  default type</li>
+                                                <li id="lists">'reset'</li>
+                                                <li id="lists">'button'</li>
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Form Validation
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Form validation is the process of checking whether a user has entered the
+                                        information into a form correctly.  </li>
+                                <li id="lists">Examples:
+                                    <ul id = "sub-list">
+                                        <li id="lists">A required field is completed.</li>
+                                        <li id="lists">An email address is valid.</li>
+                                        <li id="lists">A number is entered when numerical data is required.</li>
+                                        <li id="lists">A password is at least a minimum number of characters.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Validation can occur on the client side using JavaScript, and on the server side.
+                                </li>
+                                <li id="lists">
+                                    It is advisable to use both client-side and server-side validation.
+                                </li>
+                                <li id="lists">Disabling the Submit Button:
+                                    <ul id = "sub-list">
+                                        <li id="lists">A submit button can be disable by added the disabled attribute to the
+                                            &lt;input&gt; element.</li>
+                                        <li id="example">&lt;button type='submit' id='submit' disabled&gt;Submit&lt;/button&gt;</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

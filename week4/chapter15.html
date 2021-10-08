@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Modern Javascript Development</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2>Modern Javascript Development</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+                        <li id="sub-Topic">Libraries
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    A JavaScript library is a piece of code that provides several methods that make it easier to achieve common tasks.  
+                                </li>
+                                <li id="lists">
+                                    A library will abstract functionality into easier-to-use functions and methods.
+                                </li>
+                                <li id="lists">
+                                    These can then be used to complete common tasks without having to use lots of repetitive code.
+                                </li>
+
+                                <li id="lists">
+                                    jQuery
+                                    <ul id = "sub-list">
+                                        <li id="lists">jQuery is the most popular of all the JavaScript libraries used today</li>
+                                        <li id="lists">Dollar Symbols</li>
+                                        <ul id = "sub-list">
+                                            <li id="lists">The jQuery library uses the $ symbol as a convenient alias for the the global
+                                                    jQuery object that contains all of jQuery's methods.</li>
+                                            <li id="lists">This prevents the global
+                                                scope from being polluted with any of jQuery’s methods.</li>
+                                        </ul>
+                                    </ul>
+                                </li>      
+                                <li id="lists">Underscore & Lodash
+                                    <ul id = "sub-list">
+                                        <li id="lists">Underscore and Lodash are very similar libraries of functions that provide
+                                            additional functionality to the language. </li>
+                                        <li id="lists">They both provide a large number of utility functions under the namespace _ 
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li id="lists">Advantages and Disadvantages of Libraries
+                                    <ul id = "sub-list">
+                                        <li id="lists">A big advantage of utilizing a popular library is that it will be used by lots of
+                                            people and thoroughly tested. </li>
+                                        <li id="lists">It will most likely have been optimized and
+                                            battle-tested for nearly every eventuality. </li>
+                                        <li id="lists">There will usually be lots of online documentation and a strong
+                                            community</li>
+                                        <li id="lists">There are some disadvantages to using libraries, however.
+                                            <ul id = "sub-list">
+                                                <li id="lists">You need to include the code for the library as well as your own code.</li>
+                                                <li id="lists">This increases the amount of code that needs to be downloaded by a website, which in some
+                                                    cases can cause performance issues.</li>
+                                                <li id="lists"> Another problem with libraries
+                                                    is that they might fail to implement the functionality in the precise way that
+                                                    you want it to perform. </li>    
+                                            </ul>
+                                        </li>   
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Modular JavaScript
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    A module is a self-contained piece of code that provides functions and methods that can then be used in other files and by other modules.
+                                </li>
+                                <li id="lists">
+                                    This helps to keep code organized in separate, reusable files, which improves code maintainability.
+                                </li>
+                                <li id="lists">
+                                    The code in a module should have a single purpose, and group together functions with distinct functionality.
+                                </li>
+                                <li id="lists">
+                                    Coupling
+                                    <ul id = "sub-list">
+                                        <li id="lists">The coupling of code refers to how dependent certain elements or modules of
+                                            code are on each other. </li>
+                                        <li id="lists"> Two pieces of code are said to be tightly coupled if
+                                            one relies on the other to run.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Default Exports
+                                    <ul id = "sub-list">
+                                        <li id="lists">Default exports refer to a single variable, function or class in a module that
+                                            can be imported without having to be explicitly named.</li>
+                                        <li id="lists">The syntax for default exports is purposely easier to read because this is how modules were
+                                            designed to be used.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Aliases
+                                    <ul id = "sub-list">
+                                        <li id="lists">The alias that is assigned to the imported module does not have to match its
+                                            name in the actual module.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Node.js Modules
+                                </li>
+
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">MVC Frameworks
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    MVC separates an application into three distinct, independent components that interact with each other
+                                    <ul id = "sub-list">
+                                        <li id="lists">Models are objects that implement the functionality for creating,
+                                            reading, updating and deleting (known as CRUD tasks) specific pieces
+                                            of information about the application, as well as any other associated
+                                            logic and behavior.</li>
+                                        <li id="lists">Views provide a visual representation of the model showing all the
+                                            relevant information. In a web application, this would be the HTML
+                                            displayed on a web page.</li>
+                                        <li id="lists">Controllers link models and views together by communicating between
+                                            them. They respond to events, which are usually inputs from a user
+                                            (entering some data into a form, for example), process the information,
+                                            then update the model and view accordingly.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    MV*
+                                    <ul id = "sub-list">
+                                        <li id="lists">It is quite common to see the acronym MV* used to describe JavaScript
+                                            frameworks, rather than MVC.</li>
+                                        <li id="lists">JavaScript implementations do not strictly follow the controller pattern. </li>
+                                        <li id="lists">MV* Frameworks
+                                            <ul id = "sub-list">
+                                                <li id="lists">An MVC architecture can take a lot of code to implement, and many
+                                                    frameworks have emerged that take care of much of the setup code for you.
+                                                    <ul id = "sub-list">
+                                                        <li id="lists">Aurelia</li>
+                                                        <li id="lists">Angular</li>
+                                                        <li id="lists">Ember</li>
+                                                    </ul>
+                                                </li>   
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Package Managers
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Package managers allow developers to download modules from a central repository.
+                                </li>
+                                <li id="lists">
+                                    A package is just a directory with one or more files of code, as well as a package.json file that contains
+                                    information about the code in the package.</li>
+                                <li id="lists">
+                                    A package manager makes it easy to install, upgrade and remove any packages that are used in a project.
+                                </li>
+                                <li id="lists">npm
+                                    <ul id = "sub-list">
+                                        <li id="lists">The Node Package Manager was developed soon after Node.js was introduced to allow JavaScript code to be shared by developers.</li>       
+                                        <li id="lists">npm allows you to install JavaScript packages onto your machine. Some
+                                            packages rely on other packages, so npm acts as a dependency manager.</li> 
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Webpack
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Webpack is a module bundler that takes all the JavaScript files used in your project and bundles them altogether in one file.
+                                </li>
+                                <li id="lists">
+                                    Webpack also uses the concept of 'loaders', which allows you to perform tasks such as:
+                                    <ul id = "sub-list">
+                                        <li id="lists">Transpiling code</li> 
+                                        <li id="lists">Minifying code</li> 
+                                        <li id="lists">Linting code</li> 
+                                        <li id="lists">Testing code</li> 
+                                        <li id="lists">Compiling CSS preprocessor files (such as Sass, Less or Stylus) into
+                                            standard CSS files.</li> 
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
