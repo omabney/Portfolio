@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title> Testing and Debugging</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2> Testing and Debugging</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+                        <li id="sub-Topic">Errors, exceptions, and warnings
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Errors are caused when something goes wrong in a program.
+                                </li>
+                                <li id="lists">
+                                    They are usually caused by one of the following:                                    
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            System error
+                                            <ul id = "sub-list">
+                                                <li id="lists">
+                                                    There’s a problem with the system or external devices with which the program is interacting.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            Programmer error
+                                            <ul id = "sub-list">
+                                                <li id="lists">
+                                                    The program contains incorrect syntax or faulty logic; it could even be as simple as a typo.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            User error
+                                            <ul id = "sub-list">
+                                                <li id="lists">
+                                                    The user has entered data incorrectly, which the program is unable to handle.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>       
+                                <li id="lists">
+                                    Exceptions
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            An exception is an error that produces a return value that can then be used by the program to deal with the error. 
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Stack Traces
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            An exception will also produce a stack trace. 
+                                        </li>
+                                        <li id="lists">
+                                            This is a sequence of functions or method calls that lead to the point where the error occurred. 
+                                        </li>
+                                        <li id="lists">
+                                            A stack trace will work backwards from the point at which the error occurred to identify the original function or method that started the sequence. 
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Warnings
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            A warning can occur if there’s an error in the code that isn't enough to cause the program to crash.
+                                        </li>
+                                    </ul>
+                                </li>                     
+                            </ul>
+                        </li><br><hr>
+                        
+                        <li id="sub-Topic">Strict Mode
+                            <ul id = "sub-list">
+                                <li id="lists">ECMAScript 5 introduced a strict mode that produces more exceptions and
+                                    warnings and prohibits the use of some deprecated features. 
+                                </li>
+                                <li id="lists"> This is due to the fact that strict mode considers coding practices that were previously accepted
+                                    as just being 'poor style' as actual errors.
+                                </li>
+                                <li id="lists"> Strict mode encourages a better quality of
+                                    JavaScript to be written, so its use is
+                                    recommended.
+                                </li>
+                                <li id="lists"> Strict mode simply requires the following string to be added to the first line
+                                    of a JavaScript file:
+                                    <ul id = "sub-list">
+                                        <li id="example">'use strict';</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Linting Tools
+                                    <ul id = "sub-list">
+                                        <li id="lists">Linting tools such as JS Lint, JS Hint, and ES Lint can be used to test the
+                                            quality of JavaScript code, beyond simply using strict mode. </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Feature Detection
+                                    <ul id = "sub-list">
+                                        <li id="lists">The recommended way to determine browser support for a feature is to use
+                                            feature detection. </li>
+                                        <li id="lists">This is done using an if statement to check whether an
+                                            object or method exists before trying to actually call the method. </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Debugging in the Browser
+                            <ul id = "sub-list">
+                                <li id="lists">Debugging is the process of finding out where bugs occur in the code and
+                                    then dealing with them.
+                                </li>
+                                <li id="lists">Breakpoints
+                                    <ul id = "sub-list">
+                                        <li id="lists">which halt the progress of the code and allow us to view the value of different variables at
+                                            that point in the program.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    The Trusty Alert
+                                    <ul id = "sub-list">
+                                        <li id="lists">The most basic form of debugging is to use the alert() method to show a
+                                            dialog at certain points in the code. </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Using the Console
+                                    <ul id = "sub-list">
+                                        <li id="lists">Most modern JavaScript environments have a console object that provides a
+                                            number of methods for logging information and debugging.
+                                            <ul id = "sub-list">
+                                                <li id="lists">console.log() 
+                                                    <ul id = "sub-list">
+                                                        <li id="lists">This can be used to log the value of variables at different stages of the program.
+                                                        </li>
+                                                        <li id="lists">It will not actually stop the execution of the program in the
+                                                            same way as alert() does.
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="lists">console.trace()
+                                                    <ul id = "sub-list">
+                                                        <li id="lists">The method will log an interactive stack trace in the console. 
+                                                        </li>
+                                                        <li id="lists">This will show the functions that were called in the lead up to
+                                                            an exception occurring while the code is running.
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Debugging Tools
+                                    <ul id = "sub-list">
+                                        <li id="lists">Most modern browsers also have a debugging tool that allows you to set
+                                            breakpoints in your code that will pause it at certain points.</li>
+                                        <li id="lists">One of the most useful commands is the debugger keyword.
+                                            <ul id = "sub-list">
+                                                <li id="lists">This will create a breakpoint in your code that will pause the execution of the code and allow
+                                                    you to see where the program is currently up to.</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">Remove Debugging Code Prior to Shipping.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Error Objects
+                            <ul id = "sub-list">
+                                <li id="lists">An error object can be created by the host environment when an exception
+                                    occurs.
+                                </li>
+                                <li id="lists">It can be created in the code using a constructor function, like so:
+                                    <ul id = "sub-list">
+                                        <li id="example">const error = new Error();</li>
+                                        <li id="example">const error = new Error('Oops, something went wrong');</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    There are seven more error objects used for specific errors:
+                                    <ul id = "sub-list">
+                                        <li id="lists">EvalError
+                                            <ul id = "sub-list">
+                                                <li id="lists">Not used in the current ECMAScript specification and only
+                                                    retained for backwards compatibility.</li>
+                                                <li id="lists">It was used to identify errors when using the global eval() function.</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">RangeError
+                                            <ul id = "sub-list">
+                                                <li id="lists">Thrown when a number is outside an allowable range of
+                                                    values.</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">ReferenceError
+                                            <ul id = "sub-list">
+                                                <li id="lists">Thrown when a reference is made to an item that
+                                                    doesn’t exist.</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">SyntaxError
+                                            <ul id = "sub-list">
+                                                <li id="lists">Thrown when there’s an error in the code’s syntax.</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">TypeError
+                                            <ul id = "sub-list">
+                                                <li id="lists">Thrown when there’s an error in the type of value used; for
+                                                    example, a string is used when a number is expected.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">URIError
+                                            <ul id = "sub-list">
+                                                <li id="lists"> when there’s a problem encoding or decoding the URI.</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">InternalError
+                                            <ul id = "sub-list">
+                                                <li id="lists">A non-standard error that is thrown when an error
+                                                    occurs in the JavaScript engine.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    All error objects have a number of properties, but they’re often used inconsistently across browsers. 
+                                </li>
+                                <li id="lists">
+                                    The only properties that are generally safe to use are:
+                                    <ul id = "sub-list">
+                                        <li id="lists">The name property returns the name of the error constructor function
+                                            used as a string, such as 'Error' or 'ReferenceError'.</li>
+                                        <li id="lists">The message property returns a description of the error and should be
+                                            provided as an argument to the Error constructor function.</li>
+                                        <li id="lists">The stack property will return a stack trace for that error.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                        
+                        <li id="sub-Topic">Throwing Exceptions
+                            <ul id = "sub-list">
+                                <li id="lists">Throw your own exceptions using the throw statement.
+                                    <ul id = "sub-list">
+                                        <li id="lists">This will allow for any problems in your code to
+                                            be highlighted and dealt with, rather than lurk quietly in the background.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    The throw statement can be applied to any JavaScript expression, causing the execution of the program to stop.
+                                    <ul id = "sub-list">
+                                        <li id="example">throw new Error('Something has gone badly wrong!');
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Exception Handling
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    When an exception occurs, the program terminates with an error message.
+                                </li>
+                                <li id="lists">
+                                    This is ideal in development as it allows us to identify and fix errors.
+                                </li>
+                                <li id="lists">
+                                    It is possible to handle exceptions gracefully by catching the error. 
+                                </li>
+                                <li id="lists">
+                                    Any errors can be hidden from users, but still identified.
+                                </li>
+                                <li id="lists">
+                                    try, catch, and finally
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            If we suspect a piece of code will result in an exception, we can wrap it in a try block. 
+                                        </li>
+                                        <li id="lists">
+                                            This will run the code inside the block as normal, but if an exception occurs it will pass the error object that is thrown onto a catch block. 
+                                        </li>
+                                        <li id="lists">
+                                            The code inside the catch block will only run if an exception is thrown inside the try block.
+                                        </li>
+                                        <li id="lists">
+                                            The error object is automatically passed as a parameter to the catch block. 
+                                        </li>
+                                        <li id="lists">
+                                            A finally block can be added after a catch block. 
+                                            <ul id = "sub-list">
+                                                <li id="lists">
+                                                    This will always be executed after the try or catch block, regardless of whether an exception occurred or not. 
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Tests
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Testing is an important part of programming that can often be overlooked.
+                                </li>
+                                <li id="lists">
+                                    Writing good tests means your code will be less brittle as it develops, and any
+                                    errors will be identified early on.
+                                </li>
+                                <li id="lists">
+                                    Test-driven Development
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Test-driven development(TDD) is the process of writing tests before any
+                                            actual code. 
+                                        </li>
+                                        <li id="lists">
+                                            The process followed in small piecemeal chunks every time a new feature is implemented is as follows:
+                                            <ul id = "sub-list">
+                                                <li id="lists">
+                                                    Write tests (that initially fail)
+                                                </li>
+                                                <li id="lists">
+                                                    Write code to pass the tests
+                                                </li>
+                                                <li id="lists">
+                                                    Refactor the code
+                                                </li>
+                                                <li id="lists">
+                                                    Test refactored code
+                                                </li>
+                                                <li id="lists">
+                                                    Write more tests for new features
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Testing Frameworks
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Jest
+                                            <ul id = "sub-list">
+                                                <li id="lists">
+                                                    Jest is a TDD framework, created by Facebook
+                                                </li>
+                                                <li id="lists">
+                                                    It makes it easy to create and run tests by providing helper methods for common test assertions.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
