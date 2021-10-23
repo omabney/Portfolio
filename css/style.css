@@ -25,7 +25,6 @@ header h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: rgb(250, 250, 250);
 }
 
 .card{

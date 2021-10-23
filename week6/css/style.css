@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+header h1{
+    text-align:center;
+    color:rgb(37, 35, 35);
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    padding: 2rem;
+    background-color: rgb(138, 138, 138);
+    margin-bottom: 50px;
+
+}
+
+header a{
+    text-decoration: none;
+}
+
+.container{
+    margin: 50px;
+}
+
+main{
+    padding-left: 50px;
+    padding-top: 10px;
+    font-family: calibri;
+}
+
+#sub-Topic{
+    font-size: 1.25rem;
+    color: red;
+    padding: 5px;
+}
+#sub-list{
+    padding: 10px;
+}
+
+#lists{
+    color: black;
+    font-size: 1rem;
+}
+hr{
+    height:2px;
+    border-width:0;
+    color:gray;
+    background-color:gray;
+}
+
+#example{
+    font-family: "Times New";
+    font-size: 0.9em;
+    padding-left: 5px;
+    list-style-type: none;
+}
+

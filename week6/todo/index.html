@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bb702aa4cf.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" type="module"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>To-Do App</title>
+</head>
+<body>
+    <div class="card">
+        <header>Todos</header>
+        <main>
+            <ul class="todo-list"></ul>
+            <div id="control-btn" class= "control-btn">
+                <div id="left"><span class="tasks-left"></span> task left</div>
+                <div id="task-all">All</div>
+                <div id="task-active">Active</div>
+                <div id="task-completed">Completed</div>
+            </div>
+        </main>
+        <footer>
+            <form id="add-list" class="">
+                <input type="text" name="newtodo" class="newtodo" placeholder="Add new to-do list" autofocus required>
+                <button class="list-btn" type="submit">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </form>
+        </footer>
+    </div>
+</body>
+</html>
