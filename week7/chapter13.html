@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Ajax</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2>Ajax</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+                        <li id="sub-Topic">Clients and Servers
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Ajax is a technique that allows web pages to communicate asynchronously with a server, and it dynamically 
+                                                updates web pages without reloading.
+                                </li>
+                                <li id="lists">
+                                    The web of computers known as the internet can be separated into two parts:
+                                    <ul id = "sub-list">
+                                        <li id="lists">A client, such as a web browser, will request a resource
+                                            (usually a web page) from a server, which processes the request and sends
+                                            back a response to the client.</li>
+                                    </ul>
+                                </li>  
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">APIs
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    An application programming interface (API) is a collection of methods that
+                                    allows external access to another program or service.</li>
+                                <li id="lists">The fetch API
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            The Fetch API uses promises to avoid callback hell, and also streamlines a 
+                                                    number of concepts that had become cumbersome when using the XMLHttpRequest object.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Basic Usage
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            The Fetch API provides a global fetch() method that only has one
+                                            mandatory argument, which is the URL of the resource you wish to fetch. 
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Response Interface
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            The Fetch API introduced the Response interface that deals with the object that’s
+                                                     returned when the promise is fulfilled.</li>
+                                        <li id="lists">Some properties of the Response object are:
+                                            <ul id = "sub-list">
+                                                <li id="lists">headers – A Headers object containing any headers
+                                                    associated with the response</li>
+                                                <li id="lists">url – A string containing the URL of response</li>
+                                                <li id="lists">redirected – A boolean value that specifies if the response is the result of a redirect</li>
+                                                <li id="lists">type – A string value of 'basic', 'cors', 'error' or 'opaque'.
+                                                    <ul id = "sub-list">
+                                                        <li id="lists">A value of 'basic' is used for a response from the same domain.</li>
+                                                        <li id="lists">A value of 'cors' means the data was received from a valid 
+                                                                cross-origin request from a different domain.</li>
+                                                        <li id="lists">A value of 'opaque' is used for a response received from 'no-cors' 
+                                                                    request from another domain, which means access to the data will be severely restricted.</li>
+                                                        <li id="lists"> A value of 'error' is used when a network error occurs.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Redirects
+                                    <ul id = "sub-list">
+                                        <li id="lists">The redirect() method can be used to redirect to another URL.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Text Responses
+                                    <ul id = "sub-list">
+                                        <li id="lists">The text() method takes a stream of text from the response, reads it to
+                                            completion and then returns a promise that resolves to a USVSting object that
+                                            can be treated as a string in JavaScript.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">File Responses
+                                    <ul id = "sub-list">
+                                        <li id="lists">The blob() method is used to read a file of raw data, such as an image or a
+                                            spreadsheet. Once it has read the whole file, it returns a promise that resolves
+                                            with a blob object.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">JSON Responses
+                                    <ul id = "sub-list">
+                                        <li id="lists"> The json()method is used to deal with these by transforming 
+                                            a stream of JSON data into a promise that resolves to a JavaScript object.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Request Interface
+                                    <ul id = "sub-list">
+                                        <li id="lists">Request objects are created using the Request() constructor, and include the
+                                            following properties:
+                                            <ul id = "sub-list">
+                                                <li id="lists">url – The URL of the requested resource (the only property that is
+                                                    required).</li>
+                                                <li id="lists">method – a string that specifies which HTTP method should be used for
+                                                    the request. By default, this is 'GET'.</li>
+                                                <li id="lists">headers – This is a Headers object (see later section) that provides
+                                                    details of the request's headers.</li>
+                                                <li id="lists">mode – Allows you to specify if CORS is used or not. CORS is enabled
+                                                    by default.</li>
+                                                <li id="lists">cache – Allows you to specify how the request will use the browser's
+                                                    cache. </li>
+                                                <li id="lists">credentials – Lets you specify if cookies should be allowed with the
+                                                    request.</li>
+                                                <li id="lists">redirect – Specifies what to do if the response returns a redirect.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Headers Interface
+                                    <ul id = "sub-list">
+                                        <li id="lists">HTTP headers are used to pass on any additional information about a request
+                                            or response.</li>
+                                        <li id="lists">A new Headers instance is created using a constructor function, as seen in the
+                                            example below:
+                                            <ul id = "sub-list">
+                                                <li id="example">const headers = new Headers();</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">FormData
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    The Fetch API includes the FormData interface, which makes it much easier to submit information in forms using Ajax.
+                                </li>
+                                <li id="lists">
+                                    A FormData instance is created using a constructor function:
+                                    <ul id = "sub-list">
+                                        <li id="example">const data = new FormData();</li>
+                                    </ul>
+                                </li>  
+                            </ul>
+                        </li><br><hr>
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

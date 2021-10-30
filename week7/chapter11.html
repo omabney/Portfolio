@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Further Functions</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2>Further Functions</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+                        <li id="sub-Topic">Function Properties and Methods
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Functions are first-class objects means they can have properties
+                                    and methods themselves.
+                                </li>                           
+                                <li id="lists">Call and Apply Methods
+                                    <ul id = "sub-list">
+                                        <li id="lists">The call() method can be used to set the value of this inside a function to
+                                            an object that is provided as the first argument.</li>
+                                        <li id="lists">If a function doesn’t refer to an object as this in its body, it can still be called
+                                            using the call() method, but you need provide null as its first argument.</li>
+                                        <li id="lists">The apply() method works in the same way, except the arguments of the
+                                            function are provided as an array, even if there is only one argument</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Custom Properties
+                                    <ul id = "sub-list">
+                                        <li id="lists">description property
+                                            <ul id = "sub-list">
+                                                <li id="example">square.description = 'Squares a number that is provided as an argument'</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">Memoization property
+                                            <ul id = "sub-list">
+                                                <li id="lists">A useful feature of this is that it provides result caching, or memoization.</li>
+                                                <li id="lists">If a function takes some time to compute a return value, we can save the
+                                                    result in a cache property.</li>
+                                                <li id="lists">If the same argument is used again later, we
+                                                    can return the value from the cache, rather than having to compute the result
+                                                    again.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Immediately Invoked Function Expressions
+                            <ul id = "sub-list">
+                                <li id="lists">An Immediately Invoked Function Expression – or IIFE – (pronounced
+                                    'iffy') is an anonymous function that, as the name suggests, is invoked as soon
+                                    as it’s defined.</li>
+                                <li id="lists">This is easily achieved by placing parentheses at the end of
+                                    the function definition
+                                    <ul id = "sub-list">
+                                        <li id="example">
+                                            (function(){<br>
+                                            const temp = 'World';<br>
+                                            console.log(`Hello ${temp}`);<br>
+                                            })();<br>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Temporary Variables</li>
+                                <li id="lists">Initialization Code
+                                    <ul id = "sub-list">
+                                        <li id="lists">An IIFE can be used to set up any initialization code that there’ll be no need
+                                            for again.</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Safe Use of Strict Mode</li>
+                                <li id="lists">Creating Self-contained Code Blocks
+                                    <ul id ="sub-list">
+                                        <li id="lists">An IIFE can be used to enclose a block of code inside its own private scope
+                                        so it doesn’t interfere with any other part of the program.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Functions that Define and Rewrite Themselves
+                            <ul id = "sub-list">
+                                <li id="lists">The dynamic nature of JavaScript means that a function is able to not only call itself, but define itself, 
+                                            and even redefine itself. </li>
+                                <li id="lists"> This is done by assigning an anonymous function to a variable that has the same name as the function.</li>
+                                <li id="lists"> If the function is also assigned to another variable, this variable will maintain the original function definition and not be rewritten.</li>
+                                <li id="lists">Losing Properties
+                                    <ul id = "sub-list">
+                                        <li id="lists">If any properties have previously been set on the function, these will be lost
+                                            when the function redefines itself.</li>
+                                        <li id="lists">This is called the Lazy Definition Pattern and is often used when some
+                                            initialization code is required the first time it’s invoked. </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Init-Time Branching
+                            <ul id = "sub-list">
+                                <li id="lists">This technique can be used with the feature detection r to create functions that rewrite themselves, known as init-time
+                                    branching. </li>
+                                <li id="lists">This enables the functions to work more effectively in the
+                                    browser, and avoid checking for features every time they’re invoked.</li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Recursive Functions
+                            <ul id = "sub-list">
+                                <li id="lists">A recursive function is one that invokes itself until a certain condition is met.</li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Callbacks
+                            <ul id = "sub-list">
+                                <li id="lists">They’re functions passed to other functions as arguments and then invoked inside the function
+                                    they are passed to.</li>
+                                <li id="lists">Callbacks can be used to facilitate event-driven asynchronous programming.</li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Promises
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Promises don't do anything that can't already be achieved using callbacks, but they help simplify the process, and
+                                             avoid the convoluted code that can result from using multiple callbacks.
+                                </li>
+                                <li id="lists">
+                                    The Promise Life Cycle
+                                    <ul id = "sub-list">
+                                        <li id="lists">When a promise is created, it calls an asynchronous operation and is then said
+                                            to be pending.</li>
+                                        <li id="lists">It remains in this state while the operation is taking place. At
+                                            this stage, the promise is said to be unsettled.</li>
+                                        <li id="lists">Once the operation has completed, the promise is said to have been settled. </li>
+                                        <li id="lists">A settled promise can result in two different outcomes:
+                                            <ul id = "sub-list">
+                                                <li id="lists">Resolved ― the asynchronous operation was completed successfully.</li>
+                                                <li id="lists">Rejected ― the asynchronous operation didn’t work as expected, wasn't
+                                                    successfully completed or resulted in an error.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Creating A Promise
+                                    <ul id = "sub-list">
+                                        <li id="lists">A promise is created using a constructor function. This takes a function called an executor as an argument. </li>
+                                        <li id="lists">The executor initializes the promise and starts the asynchronous operation. </li>
+                                        <li id="lists">It also accepts two functions as arguments: 
+                                            <ul id = "sub-list">
+                                                <li id="lists">The resolve() function is called if the operation is successful.</li>
+                                                <li id="lists">The reject() function is called if the operation fails.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Dealing With A Settled Promise
+                                    <ul id = "sub-list">
+                                        <li id="lists">Once a promise has been settled, the then() method can be used to deal with the outcome.</li>
+                                        <li id="lists"> This method accepts two arguments. 
+                                            <ul id = "sub-list">
+                                                <li id="lists">The first is a fulfilment function that’s called when the promise is resolved.</li>
+                                                <li id="lists"> The second argument is a rejection function that’s called if the promise is rejected.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Async Functions
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    These functions are preceded by the async keyword and allow you to write asynchronous code as if it was synchronous. 
+                                </li>
+                                <li id="lists">
+                                    This is achieved by using the await operator before an asynchronous function.
+                                </li>
+                                <li id="lists">Generalized Functions
+                                    <ul id = "sub-list">
+                                        <li id="lists">Callbacks can be used to build more generalized functions.</li>
+                                        <li id="lists">Instead of having lots of specific functions, one function can be written that accepts a callback.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                        <li id="sub-Topic">Closures
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    A closure is formed when the inner function is returned by the outer function, maintaining access to any variables 
+                                            declared inside the enclosing function.
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                        <li id="sub-Topic">Functional Programming
+                            <ul id = "sub-list">
+                                <li id="lists">Pure Functions
+                                    <ul id = "sub-list">
+                                        <li id="lists">A key aspect of functional programming is its use of pure functions.</li>
+                                        <li id="lists">A pure function is a function that adheres to the following rules:
+                                            <ul id = "sub-list">
+                                                <li id="lists">The return value of a pure function should only depend on the values
+                                                    provided as arguments. It doesn't rely on values from somewhere else in the
+                                                    program.</li>
+                                                <li id="lists">There are no side-effects. A pure function doesn't change any values or
+                                                    data elsewhere in the program. </li>
+                                                <li id="lists"> Referential transparency. Given the same arguments, a pure function will
+                                                    always return the same result. </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Higher-Order Functions
+                                    <ul id = "sub-list">
+                                        <li id="lists">Higher-order functions are functions that accept another function as an
+                                            argument, or return another function as a result, or both.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                        <li id="sub-Topic">Currying
+                            <ul id = "sub-list">
+                                <li id="lists">Currying is a process that involves the partial application of functions.</li>
+                                <li id="lists">A function is said to be curried when not all arguments have been supplied to
+                                    the function, so it returns another function that retains the arguments already
+                                    provided, and expects the remaining arguments that were omitted when the
+                                    original function was called.</li>
+                                <li id="lists">Currying relies on higher-order functions that are able to return partially
+                                    applied functions. </li>
+                            </ul>
+                        </li><br><hr>
+
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
