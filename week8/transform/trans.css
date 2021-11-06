@@ -1,0 +1,18 @@
+main{
+    max-width: 300px;
+    margin: 50px auto;
+}
+.ad {
+    text-transform: uppercase;
+}
+.ad span{
+    font-size: 30px;
+    color: #999999;
+    display: inline-block;
+    -webkit-transition: -webkit-transform;
+    transition: transform 0.2s;
+}
+.ad:hover span{
+    color: #484848;  
+    transform: rotate(10deg) translateX(40px) scale(1.5);
+}

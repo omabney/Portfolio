@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Transforms and Transitions</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2>CSS3 Transforms and Transitions</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+                        <li id="sub-Topic">Transforms
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    The CSS3 transform property lets you lets you translate, rotate, scale, and/or skew 
+                                                    any element on the page.
+                                </li>                           
+                                <li id="lists">
+                                    CSS3 gives you unprecedented control over many more aspects of the element’s appearance.
+                                </li>
+                                <li id="lists">
+                                    We can manipulate an element’s appearance using transform functions.
+                                </li>
+                                <li id="lists">
+                                    The value of the transform property is one or more 
+                                            transform functions (separated by spaces) that will be applied in
+                                             the order they’re provided.
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Translation
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Translation functions allow you to move elements left, right, up, or down.
+                                </li>
+                                <li id="lists">
+                                    When you employ a translation function, you’re moving elements without impacting
+                                    the flow of the document.
+                                </li>
+                                <li id="lists">Temporary Variables</li>
+                                <li id="lists">
+                                    A translated element can only be moved relative to its current position.
+                                </li>
+                                <li id="lists">The translate(x,y) function moves an element x from the left, and y from the top:
+                                    <ul id ="sub-list">
+                                        <li id="example">
+                                            transform: translate(45px, -45px);
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">If you only want to move an element vertically or horizontally, you can use the
+                                    translatex or translatey functions respectively.
+                                    <ul id ="sub-list">
+                                        <li id="example">
+                                            transform: translateX(45px);<br>
+                                            transform: translateY(-30px);
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Scaling
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    The scale(x,y) function scales an element by the defined factors horizontally then vertically. 
+                                </li>
+                                <li id="lists">  
+                                    If only one value is provided, it will be used for both the x and y values,
+                                    growing or shrinking your element or pseudo-element while maintaining the original
+                                    aspect ratio.
+                                    <ul id = "sub-list">
+                                        <li id="example">
+                                            transform: scale(1.5, 0.25);<br>
+                                            transform: scale(1.5);
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Rotation
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    The rotate() function rotates an element around the point of origin by a specified
+                                    angle value.
+                                </li>
+                                <li id="lists">
+                                    As with scale, by default the point of origin is the element’s center.
+                                    <ul id = "sub-list">
+                                        <li id="example">
+                                            transform: rotate(10deg);
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Skew
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    The skew(x,y) function specifies a skew along the x and y axes.
+                                    <ul id = "sub-list">
+                                        <li id="example">
+                                            transform: skew(15deg, 4deg);
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    As with translate and scale, there are axis-specific versions of the skew transform:
+                                        skewX() and skewY().
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Changing the Origin of the Transform
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    You can control the origin from which your transforms are applied.
+                                             This is done using the transform-origin property. 
+                                    <ul id = "sub-list">
+                                        <li id="example">
+                                            transform-origin: 0 0;
+                                        </li>
+                                    </ul>
+                                </li> 
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Transitions
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Animation has certainly been possible for some time with JavaScript, but native CSS transitions generally require less
+                                         client-side processing, so they’ll usually appear smoother.
+                                </li>
+                                <li id="lists">
+                                    Transitions allow the values of CSS properties to change over time, essentially providing
+                                         simple animations.
+                                </li>
+                                <li id="lists">
+                                    CSS transitions are declared along with the regular styles on an element.
+                                </li>
+                                <li id="lists">
+                                    Here are the steps to create a simple transition using only CSS:
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Declare the original state of the element in the default style declaration.
+                                        </li>
+                                        <li id="lists">
+                                            Declare the final state of your transitioned element; for example, a :hover state.
+                                        </li>
+                                        <li id="lists">
+                                            Include the transition functions in your default style declaration using the
+                                            transition properties, including: transition-property, transition-duration,
+                                            transition-timing-function, and transition-delay.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">transition-property
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            The transition-property property defines the CSS properties of the element that should be transitioned,
+                                                 with all for all properties being the default.
+                                            <ul id = "sub-list">
+                                                <li id="example">
+                                                    transition-property: transform;
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            In itself, the transition-property property has no effect; 
+                                                that’s because we still need to specify the duration of the transition.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">The transition-duration Property
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            The transition-duration property sets how long the transition will take:
+                                             the duration of time it takes to go from
+                                                 the default state to the transitioned state.
+                                            <ul id = "sub-list">
+                                                <li id="example">
+                                                    transition-duration: 0.2s;
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">The transition-timing-function Property
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            The transition-timing-function lets you control 
+                                                the pace of the transition in even more granular detail.
+                                            <ul id = "sub-list">
+                                                <li id="example">
+                                                    transition-timing-function: ease-out;
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">The transition-delay Property
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Finally, by using the transition-delay property, it’s possible to
+                                                 introduce a delay before the transition begins.
+                                            <ul id = "sub-list">
+                                                <li id="example">
+                                                    transition-delay: 50ms;
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">The transition Shorthand Property
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            With four transition properties and a vendor prefix,
+                                                 you could wind up with eight lines of CSS for a single transition.
+                                            <ul id = "sub-list">
+                                                <li id="example">
+                                                    transition: transform 0.2s ease-out 50ms;
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Multiple Transitions
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            The transition properties allow for multiple transitions in one call.
+                                            <ul id = "sub-list">
+                                                <li id="example">
+                                                    transition: transform 0.2s ease-out 50ms, color 0.1s linear 50ms;
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Animations
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Transitions animate elements over time; however, they’re limited in what they can do.
+                                </li>
+                                <li id="lists">
+                                    CSS animations, unlike transitions, allow you to control each step
+                                         of an animation via keyframes.
+                                </li>
+                                <li id="lists">
+                                    A keyframe is a snapshot that defines a starting or end point of any smooth transition.
+                                </li>
+                                <li id="lists">
+                                    Keyframes
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            To animate an element in CSS, you first create a named animation, then attach it to
+                                                 an element in that element’s property declaration block.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Animation Properties
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            The animation properties, remembering that you will need two declarations for
+                                                each property as the -webkit- prefix is still needed in WebKit browsers, are as follows:
+                                            <ul id = "sub-list">
+                                                <li id="lists">animation-name
+                                                    <ul id = "sub-list">
+                                                        <li id="lists">
+                                                            This property is used to attach an animation (previously defined using the @key-frames syntax) to an element:
+                                                        </li><br>
+                                                        <li id="example">
+                                                            animation-name: appearDisappear;
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="lists">animation-duration
+                                                    <ul id = "sub-list">
+                                                        <li id="lists">
+                                                            The animation-duration property defines the length of time (in seconds or milli-seconds) an animation takes to complete one iteration (all the way through, from 0% to 100%):
+                                                        </li><br>
+                                                        <li id="example">
+                                                            animation-duration: 300ms;
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="lists">animation-timing-function
+                                                    <ul id = "sub-list">
+                                                        <li id="lists">
+                                                            Like the transition-timing-function property, the animation-timing-function
+                                                                determines how the animation will progress over its duration.
+                                                        </li><br>
+                                                        <li id="example">
+                                                            animation-timing-function: linear;
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="lists">animation-iteration-count
+                                                    <ul id = "sub-list">
+                                                        <li id="lists">
+                                                            The animation-iteration-count property lets you define how many times the
+                                                                animation will play through.
+                                                        </li><br>
+                                                        <li id="example">
+                                                            animation-iteration-count: infinite;
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="lists">animation-direction
+                                                    <ul id = "sub-list">
+                                                        <li id="lists">
+                                                            To change the normal or default value for animation direction, you can use the animation-direction 
+                                                                property to change this behavior. 
+                                                        </li><br>
+                                                        <li id="example">
+                                                            animation-direction: alternate;
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="lists">animation-delay
+                                                    <ul id = "sub-list">
+                                                        <li id="lists">
+                                                            The animation-delay property is used to define how many milliseconds or seconds
+                                                                to wait before the browser begins the animation:
+                                                        </li><br>
+                                                        <li id="example">
+                                                            animation-delay: 50ms;
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="lists">animation-fill-mode
+                                                    <ul id = "sub-list">
+                                                        <li id="lists">
+                                                            The animation-fill-mode property defines what happens before the first animation
+                                                                iteration begins and after the last animation iteration concludes.
+                                                        </li><br>
+                                                        <li id="example">
+                                                            animation-fill-mode: both;
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="lists">animation-play-state
+                                                    <ul id = "sub-list">
+                                                        <li id="lists">
+                                                            The animation-play-state property defines whether the animation is running or paused.
+                                                        </li><br>
+                                                        <li id="lists">
+                                                            This provides a simple way to control CSS animations from within your CSS or with JavaScript.
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="lists">The Shorthand animation Property
+                                                    <ul id = "sub-list">
+                                                        <li id="example">
+                                                            animation: 300ms ease-in alternate 5s backwards appearDisappear;
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

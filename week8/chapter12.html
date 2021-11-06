@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Canvas, SVG, and Drag and Drop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2>Canvas, SVG, and Drag and Drop</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+                        <li id="sub-Topic">Canvas
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    With HTML5’s Canvas API, we can draw anything we can imagine, all through
+                                        JavaScript.
+                                </li>
+                                <li id="lists">
+                                    With canvas, we can draw shapes and lines, arcs and text,
+                                             gradients and patterns.
+                                </li>  
+                                <li id="lists">
+                                    Canvas gives us the power to manipulate pixels in images and even video.
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Canvas API
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Supported in:   
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Chrome 4+
+                                        </li>
+                                        <li id="lists">
+                                            Firefox 2+
+                                        </li>
+                                        <li id="lists">
+                                            Opera 9.6+
+                                        </li>
+                                        <li id="lists">
+                                            Safari 3.1+
+                                        </li>
+                                        <li id="lists">
+                                            iOS 3.2+
+                                        </li>
+                                        <li id="lists">
+                                            Internet Explorer 9.0+
+                                        </li>
+                                        <li id="lists">
+                                            Android 3.0+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    First developed by Apple
+                                </li>
+                                <li id="lists">Drawing on the Canvas
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            All drawing on the canvas happens via the Canvas JavaScript API. 
+                                        </li>
+                                        <li id="lists">
+                                            Getting the Context 
+                                            <ul id = "sub-list">
+                                                <li id="example">
+                                                    var context = canvas.getContext("2d");
+                                                </li>
+                                                <li id="lists">
+                                                    The object that’s returned by getContext is an instance of CanvasRenderingContext2D. 
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Filling Our Brush with Color
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            On a real-life painting canvas, you must first saturate your brush with paint before
+                                                    you can begin.
+                                            <ul id = "sub-list">
+                                                <li id="example">
+                                                    context.strokeStyle = "red";
+                                                </li>
+                                                <li id="example">
+                                                    context.fillStyle = "blue";
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Drawing a Rectangle to the Canvas
+                                    <ul id = "sub-list">
+                                        <li id="example">
+                                            context.fillRect(10, 10, 100, 100); <br>
+                                            context.strokeRect(10, 10, 100, 100);
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Variations on fillStyle
+                                    <ul id = "sub-list">
+                                        <li id="example">
+                                            var gradient = context.createLinearGradient(0, 0, 0, 200);
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Drawing Other Shapes by Creating Paths
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Unlike rectangles and squares, however, there’s no built-in method for drawing
+                                                circles or other shapes.
+                                        </li>
+                                        <li id="lists">
+                                            To draw more interesting shapes, we must first lay out the
+                                                path of the shape.
+                                        </li>
+                                        <li id="lists">
+                                            Paths create a blueprint for your lines, arcs, and shapes, but paths are invisible
+                                                until you give them a stroke.
+                                        </li>
+                                        <li id="lists">
+                                            With more complex shapes, we need to take three steps:
+                                            <ul id = "sub-list">
+                                                <li id="lists">
+                                                    Layout the path
+                                                </li>
+                                                <li id="lists">
+                                                    Stroke the path
+                                                </li>
+                                                <li id="lists">
+                                                    Fill the path.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            Setting path
+                                            <ul id = "sub-list">
+                                                <li id="example">
+                                                    context.beginPath(); <br>
+                                                    context.arc(50, 50, 30, 0, Math.PI*2, true); <br>
+                                                    context.closePath();
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">SVG
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    SVG stands for Scalable Vector Graphics, a specific file
+                                        format that allows you to describe vector graphics using XML.
+                                </li>
+                                <li id="lists">
+                                    Drawing in SVG
+                                    <ul id = "sub-list">
+                                        <li id="example">
+                                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><br>
+                                            &nbsp&nbsp&nbsp &lt;circle cx="50" cy="50" r="25" fill="red"/> <br>   
+                                            &lt;/svg>
+                                        </li> <br>
+                                        <li id="example">
+                                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><br>
+                                            &nbsp&nbsp&nbsp &lt;desc>Drawing a rectangle&lt;/desc> <br>
+                                            &nbsp&nbsp&nbsp &lt;rect x="10" y="10" width="100" height="100" fill="blue" stroke="red" stroke-width="3" /><br>    
+                                            &lt;/svg>
+                                        </li>
+                                    </ul>
+                                </li>  
+                                <li id="lists">
+                                    Using the Raphael Library
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Raphael is an open-source JavaScript library that makes drawing and animating
+                                                with SVG much easier.
+                                        </li> 
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                        <li id="sub-Topic">Canvas versus SVG
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Canvas allows for pixel manipulation
+                                </li>
+                                <li id="lists">
+                                    One downside of canvas is that it operates in what’s known asimmediate mode
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            This means that if you ever want to add more to the canvas, you’re unable to simply add to what’s already there.
+                                        </li>
+                                    </ul>
+                                </li>  
+                                <li id="lists">
+                                    There’s also no access to what’s drawn on the canvas via the DOM. Because of this, canvas is much faster than SVG and canvas is generally the better choice if you’re looking to design a game requiring lots of animations.
+                                </li>
+                                <li id="lists">
+                                    SVG also has, at this time, a more complete set of tools to help you work with it, such as the Raphaël library and Inkscape.
+                                </li>
+                                <li id="lists">
+                                    Since SVG is a file format—rather than a set of methods that allows you to dynamically draw on a surface—you can’t manipulate SVG images the way you can manipulate pixels on canvas.
+                                </li>
+                                <li id="lists">
+                                    In summary, if you need to paint pixels to the screen and have no concerns about the ability to retrieve and modify your shapes, canvas is probably the better choice. If, on the other hand, you need to be able to access and change specific aspects of your graphics, SVG might be more appropriate.
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                        <li id="sub-Topic">Drag and Drop API
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    This API allows us to specify that certain elements are draggable, and then specify what should 
+                                        happen when these draggable elements are dragged over or dropped onto other elements on the page.
+                                </li>
+                                <li id="lists">
+                                    Drag and Drop is supported in:
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            All recent versions of Chrome, Firefox, and Safari
+                                        </li>
+                                        <li id="lists">
+                                            Partial support in Internet Explorer 7.0+ (IE10 doesn’t allow setting 
+                                                            the drag image, but supports all other features)
+                                        </li>
+                                        <li id="lists">
+                                            Opera 12+
+                                        </li>
+                                    </ul>
+                                </li>  
+                                <li id="lists">
+                                    There are several steps to adding drag and drop to your page:
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Set the draggable attribute on any HTML elements you’d like to be draggable.
+                                        </li>
+                                        <li id="lists">
+                                            Add an event listener for the dragstart event on any draggable HTML elements.
+                                        </li>
+                                        <li id="lists">
+                                            Add an event listener for the dragover and drop events on any elements that you
+                                            want to have accept dropped items.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
