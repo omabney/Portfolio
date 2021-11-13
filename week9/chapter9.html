@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>The Window Object</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2>The Window Object</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+                        <li id="sub-Topic">The Browser Object Model
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    The Browser Object Model (or BOM for short) is a collection of properties and 
+                                        methods that contain information about the browser and computer screen.
+                                </li>
+                                <li id="lists">
+                                    The BOM only makes sense in a browser environment.   
+                                </li>       
+                                <li id="lists">
+                                    In a browser environment, the global object is the window object.
+                                </li>                
+                            </ul>
+                        </li><br><hr>
+                        
+                        <li id="sub-Topic">Browser Information
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Which Browser?
+                                    <ul id = "sub-list">
+                                        <li id="example">window.navigator.userAgent</li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Location, Location, Location
+                                    <ul id = "sub-list">
+                                        <li id="lists">The window.location property is an object that contains information about
+                                            the URL of the current page. 
+                                        </li>
+                                        <li id="example">window.location.href</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                        
+                        <li id="sub-Topic">The Browser History
+                            <ul id = "sub-list">
+                                <li id="lists">The window.history property can be used to access information about any
+                                    previously visited pages in the current browser session. 
+                                    <ul id = "sub-list">
+                                        <li id="example">
+                                            window.history.length <br>
+                                            window.history.go() <br>
+                                            window.history.forward() <br>
+                                            window.history.back() 
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                        <li id="sub-Topic">Controlling Windows
+                            <ul id = "sub-list">
+                                <li id="lists">A new window can be opened using the window.open() method. 
+                                    <ul id = "sub-list">
+                                        <li id="example">
+                                            const popup = window.open('https://sitepoint.com','SitePoint','width=400,height=400,resizable=yes');<br>
+                                            popup.close(); <br>
+                                            window.moveTo(0,0); <br>
+                                            window.resizeTo(600,400);
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Screen Information
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            The window.screen object contains information about the screen the browser
+                                            is displayed on.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">The Document Object
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Each window object contains a document object.
+                                        </li>
+                                        <li id="example">
+                                            document.write()
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                        
+                        <li id="sub-Topic">Cookies
+                            <ul id = "sub-list">
+                                <li id="lists">Cookies are small files that are saved locally on a user’s computer.
+                                </li>
+                                <li id="lists">
+                                    Creating Cookies
+                                    <ul id = "sub-list">
+                                        <li id="example">document.cookie = 'name=Superman';
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Changing Cookie Values
+                                    <ul id = "sub-list">
+                                        <li id= "lists">
+                                            A cookie’s value can be changed by reassigning it to document.cookie using
+                                                the same name but a different value.
+                                        </li>
+                                        <li id="example">document.cookie =  'city=Gotham'
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Reading Cookies
+                                    <ul id = "sub-list">
+                                        <li id= "lists">
+                                            To see the current contents of the cookie jar, simply enter 
+                                        </li>
+                                        <li id="example">document.cookie
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Cookie Expiry Dates
+                                    <ul id = "sub-list">
+                                        <li id= "lists">
+                                            Cookies are session cookies by default. 
+                                        </li>
+                                        <li id="example">
+                                            document.cookie = 'name=Batman; max-age=86400' // 86400 secs = 1 day
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    The Path and Domain of Cookies
+                                    <ul id = "sub-list">
+                                        <li id="example">
+                                            document.cookie = 'name=Batman; path=/' <br>
+                                            document.cookie = 'name=Batman; domain=sitepoint.com';
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Secure Cookies
+                                    <ul id = "sub-list">
+                                        <li id="example">
+                                            document.cookie = 'name=Batman; secure';
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Deleting Cookies
+                                    <ul id = "sub-list">
+                                        <li id= "lists">
+                                            To remove a cookie, you need to set it to expire at a time in the past:
+                                        </li>
+                                        <li id="example">
+                                            document.cookie = 'name=Batman; expires=Thu, 01 Jan 1970 00:00:01 GMT'
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Timing Functions
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    The window object provides some useful methods for scheduling the
+                                        execution of a function, and for repeatedly executing functions at regular intervals.
+                                </li>
+                                <li id="lists">
+                                    setTimeout()
+                                    <ul id = "sub-list">
+                                        <li id= "lists">
+                                            The window.setTimeout() method accepts a callback to a function as its first
+                                                parameter and a number of milliseconds as its second parameter. 
+                                        </li>
+                                        <li id="example">
+                                            window.setTimeout( () => alert("Time's Up!"), 3000);
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    setInterval()
+                                    <ul id = "sub-list">
+                                        <li id= "lists">
+                                            It will repeatedly invoke the callback function after every given number of milliseconds.
+                                        </li>
+                                        <li id="example">
+                                            const summon = window.setInterval(chant,1000);
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">Animation
+                                    <ul id = "sub-list">
+                                        <li id= "lists">
+                                            The setTimeOut() and setInterval() methods can be used to animate elements on a web page. 
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

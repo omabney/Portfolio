@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>HTML5 APIs</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2>HTML5 APIs</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+                        <li id="sub-Topic">HTML5
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    The HTML5 specification is separated into modules that allow different
+                                        features to be developed at different paces then implemented without having
+                                            to wait for other features to be completed.
+                                </li>                 
+                            </ul>
+                        </li><br><hr>
+                        
+                        <li id="sub-Topic">The data- Attribute
+                            <ul id = "sub-list">
+                                <li id="lists">The data- attribute is a way of embedding data in a web page using custom
+                                    attributes that are ignored by the browser.
+                                </li>
+                                <li id="lists">The names of these attributes can be decided by the developer, but they must
+                                    use the following format:                                    
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Start with data-.
+                                        </li>       
+                                        <li id="lists">
+                                            Contain only lowercase letters, numbers, hyphens, dots, colons or
+                                                underscores.
+                                        </li>     
+                                        <li id="lists">
+                                            Include an optional string value.
+                                        </li>               
+                                    </ul>
+                                </li>
+                                <li id="lists">Browser Support                                 
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            The support for the data- attribute is generally very good in modern
+                                            browsers. 
+                                        </li>               
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">HTML5 APIs
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    The HTML5 specification contains a number of APIs that help to gain access
+                                        to hardware, such as cameras, batteries, geolocation, and the graphics card.
+                                </li>
+                                <li id="lists">HTML5 Web Storage
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            The Web Storage API provides a key-value store on the client’s computer.
+                                        </li>
+                                        <li id="lists">
+                                            That is similar to using cookies but has fewer restrictions, more storage
+                                                capacity, and is generally easier to use.
+                                        </li>
+                                        <li id="lists">
+                                            The Web Storage API has some crucial differences with cookies:
+                                            <ul id = "sub-list">
+                                                <li id="lists">Information stored is not shared with the server on every request.</li>
+                                                <li id="lists">
+                                                    Information is available in multiple windows of the browser (but only if the domain is the same).
+                                                </li>
+                                                <li id="lists">
+                                                    Storage capacity limit is much larger than the 4KB limit for cookies (there is no actual limit in
+                                                         the specification, but most browsers have a limit set at 5GB per domain).
+                                                </li>
+                                                <li id="lists">
+                                                    Any data stored does not automatically expire as it does with cookies.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            If a browser supports the Web Storage API, the window object will have a
+                                                property called localStorage, which is a native object with a number of
+                                                    properties and methods used to store data. 
+                                            <ul id = "sub-list">
+                                                <li id="example">
+                                                    localStorage.setItem('name', 'Walter White'); <br>
+                                                    localStorage.getItem('name'); <br>
+                                                    localStorage.removeItem('name'); <br>
+                                                    localStorage.clear();
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            Every time a value is saved to local storage, a storage event is fired. 
+                                        </li>
+                                        <li id="lists">
+                                            The event object sent by the event listener to the callback 
+                                                has a number of properties that provide information about the updated item:
+                                            <ul id = "sub-list">
+                                                <li id="lists">
+                                                    key tells us the key of the item that changed.
+                                                </li>
+                                                <li id="lists">
+                                                    newValue tells us the new value to which it has been changed.
+                                                </li>
+                                                <li id="lists">
+                                                    oldValue tells us the previous value before it was changed.
+                                                </li>
+                                                <li id="lists">
+                                                    storageArea tells us if it is stored in local or session storage.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Geolocation
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            The Geolocation API is used to obtain the geographical position of the
+                                            device.
+                                            <ul id = "sub-list">
+                                                <li id="example">
+                                                    navigator.geolocation.getCurrentPosition(youAreHere);
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">
+                                            The position object has several properties that can be used to find out
+                                                information about the location and movement of the device:
+                                            <ul id = "sub-list">
+                                                <li id="lists">
+                                                    position.coords property returns the coordinates of the device.
+                                                </li>
+                                                <li id="lists">
+                                                    position.speed property returns the ground speed of the device in
+                                                        meters per second.
+                                                </li>
+                                                <li id="lists">
+                                                    position.altitude property returns an estimate of the device’s altitude
+                                                        in meters above the WGS84 ellipsoid, which is a standard measurement for the center of the Earth.
+                                                </li>
+                                                <li id="lists">
+                                                    position.heading property returns the direction the device is moving
+                                                        in. This is measured as a bearing in degrees, clockwise from North.
+
+                                                </li>
+                                                <li id="lists">
+                                                    position.timestamp property returns the time that the position information was recorded.
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Web workers
+                                    <ul id = "sub-list">
+                                        <li id="lists">Web workers allow processes to be run in the background, adding support for concurrency in JavaScript.
+                                            <ul id = "sub-list">
+                                                <li id="example"> 
+                                                    const worker = new Worker('task.js');
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Websockets
+                                    <ul id = "sub-list">
+                                        <li id="lists">Websocket is a new protocol that allows two-way communication with a
+                                            server – also known as push messaging. </li>
+                                        <li id="lists"> 
+                                            This means that a connection is kept
+                                            open and responses are ‘pushed’ to the client as soon as they are received.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Notifications
+                                    <ul id = "sub-list">
+                                        <li id="lists">The Notification API allows you to show messages using the system's
+                                            notifications. </li>
+                                        <li id="lists"> 
+                                            An advantage of using the system notification is that
+                                             they will still be displayed even if the web page that calls them isn't the current tab.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">
+                                    Multimedia
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            HTML5 introduced
+                                            the &lt;audio> and &lt;video> tags used to insert audio and video clips into a web
+                                            page.  
+                                        </li>
+                                        <li id="lists">
+                                            Audio and video elements have a number of properties and methods to
+                                                control the playback of the clip.
+                                            <ul id = "sub-list">
+                                                <li id="lists">
+                                                    The play() method will start the clip playing from its current position.
+                                                </li>
+                                                <li id="lists">
+                                                    The pause() method will pause the clip at its current position.
+                                                </li>
+                                                <li id="lists">
+                                                    The volume property is a number that can be used to set the audio volume.
+                                                </li>
+                                                <li id="lists">
+                                                    The muted property is a boolean value that can be used to mute the audio.
+                                                </li>
+                                                <li id="lists">
+                                                    The currentTime property is a number value that can be used to jump to another part of the clip.
+                                                </li>
+                                                <li id="lists">
+                                                    The playbackRate property is used to fast-forward or rewind the clip by changing its value.
+                                                </li>
+                                                <li id="lists">
+                                                    The loop property is a boolean value that can be set to true to make the clip repeat in a loop.
+                                                </li>
+                                                <li id="lists">
+                                                    The duration property can be used to see how long the clip lasts.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+
+                        <li id="sub-Topic">Shims and Polyfills
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    A shim is a piece of code that adds some missing functionality to a browser, although the implementation method may
+                                        differ slightly from the standard API.
+                                </li>
+                                <li id="lists">
+                                    A polyfill is a shim that achieves the same functionality, while also using the API commands that would be used if
+                                        the feature was supported natively.
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
