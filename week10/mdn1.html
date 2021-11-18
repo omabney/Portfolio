@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Client-side form validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div id ="week-content">
+        <header>
+            <a href="../index.html">
+                <h1>Om Rao Portfolio</h1>
+            </a>
+        </header>
+        <div class="container">
+            <h2>Client-side form validation</h2>
+            <main>
+                <h3>
+                    <ul id="week-Content">
+                        <li id="sub-Topic">What is client side validation
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    Before submitting data to the server, it is important to ensure all required form controls are filled out, 
+                                    in the correct format, this is called client-side form validation.
+                                </li>
+                                <li id="lists">
+                                    This helps to ensure data submitted matches the requirements set forth in the various form controls.   
+                                </li>       
+                                <li id="lists">
+                                    Client-side validation is an initial check and an important feature of good user experience; 
+                                    by catching invalid data on the client-side, the user can fix it straight away.
+                                </li>                
+                            </ul>
+                        </li><br><hr>
+                        
+                        <li id="sub-Topic">What is form validation?
+                            <ul id = "sub-list">
+                                <li id="lists">
+                                    The feedback getting from a website's registration form when
+                                     you don't enter your data in the format they are expecting is called form-validation.
+                                </li>
+                                <li id="lists">
+                                    Validation done in the browser is called client-side validation
+                                </li>
+                                <li id="lists">
+                                    validation done on the server is called server-side validation.
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                        
+                        <li id="sub-Topic">Different types of client-side validation
+                            <ul id = "sub-list">
+                                <li id="lists">Built-in form validation</li>
+                                <li id="lists">JavaScript</li>
+                            </ul>
+                        </li><br><hr>
+                        <li id="sub-Topic">Using built-in form validation
+                            <ul id = "sub-list">
+                                <li id="lists">required
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Specifies whether a form field needs to be filled in before the form can be submitted.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">minlength and maxlength:
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Specifies the minimum and maximum length of textual data (strings).
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">min and max:
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Specifies the minimum and maximum values of numerical input types.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">type:
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Specifies whether the data needs to be a number, an email address, or some other specific preset type.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">pattern:
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            Specifies a regular expression that defines a pattern the entered data needs to follow.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">When an element is valid, the following things are true:
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            The element matches the :valid CSS pseudo-class, which lets you apply a specific style to valid elements.
+                                        </li>
+                                        <li id="lists">
+                                            If the user tries to send the data, the browser will submit the form, provided there is nothing else stopping it from doing so (e.g., JavaScript).
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="lists">When an element is invalid, the following things are true:
+                                    <ul id = "sub-list">
+                                        <li id="lists">
+                                            The element matches the :invalid CSS pseudo-class, and sometimes other UI pseudo-classes (e.g., :out-of-range) depending on the error,
+                                             which lets you apply a specific style to invalid elements.
+                                        </li>
+                                        <li id="lists">
+                                            If the user tries to send the data, the browser will block the form and display an error message.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br><hr>
+                        
+                        <li id="sub-Topic">Validating forms using JavaScript
+                            <ul id = "sub-list">
+                                <li id="lists">You must use JavaScript if you want to take control over the look and feel of native error messages or to deal with 
+                                    legacy browsers that do not support HTML's built-in form validation.
+                                </li>
+                                <li id="lists">
+                                    The Constraint Validation API
+                                    <ul id = "sub-list">
+                                        <li id="lists">Most browsers support the Constraint Validation API, which consists of a set of methods and properties available on the following form element DOM interfaces:
+                                            <ul id = "sub-list">
+                                                <li id="lists">HTMLButtonElement (represents a &lt;button> element)</li>
+                                                <li id="lists">HTMLFieldSetElement (represents a &lt;fieldset> element)</li>
+                                                <li id="lists">HTMLInputElement (represents an &lt;input> element)</li>
+                                                <li id="lists">HTMLOutputElement (represents an &lt;output> element)</li>
+                                                <li id="lists">HTMLSelectElement (represents a &lt;select> element)</li>
+                                                <li id="lists">HTMLTextAreaElement (represents a &lt;textarea> element)</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">The Constraint validation API makes the following properties available on the above elements.
+                                            <ul id = "sub-list">
+                                                <li id="lists">validationMessage: Returns a localized message describing the validation constraints that the control doesn't satisfy (if any).
+                                                     If the control is not a candidate for constraint validation</li>
+                                                <li id="lists">validity: Returns a ValidityState object that contains several properties describing the validity state of the element.</li>
+                                                <li id="lists">willValidate: Returns true if the element will be validated when the form is submitted; false otherwise.</li>
+                                            </ul>
+                                        </li>
+                                        <li id="lists">The Constraint Validation API also makes the following methods available on the above elements and the form element.
+                                            <ul id = "sub-list">
+                                                <li id="lists">checkValidity(): Returns true if the element's value has no validity problems; false otherwise.</li>
+                                                <li id="lists">reportValidity(): Reports invalid field(s) using events. Useful in combination with preventDefault() in an onSubmit event handler.</li>
+                                                <li id="lists">setCustomValidity(message): Adds a custom error message to the element; if you set a custom error message, the element is considered to be invalid, and the specified error is displayed.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br>
+                    </ul>
+                </h3>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
