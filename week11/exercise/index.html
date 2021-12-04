@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8" />
+ <title>Movie Book</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+ </head>
+ <body>
+     <header>
+         <div class = "title" id = "movieBrand"> <a href="index.html"><i class="fas fa-video"></i> Movie Book</a></div>
+         <div class = "library-link" id = "movieLibrary"><a href="library.html"><i class="fas fa-film"></i> Library</a></div>
+     </header>
+     <div class="detailSearch hide">
+        <form action="" class="details-form">
+            <input type="text" value="" class = "search" id = "movieSearch" placeholder="Enter the movie name">
+            <button class = "btn"><i class="fas fa-search"></i></button>
+        </form>
+     </div>
+ <main>
+     <div class = "searchContainer" >
+         <p class = "description">Find your Movie</p>
+        <form action="" class="home-form">
+            <input type="text" value="" class = "search" id = "movieSearch" placeholder="Enter the movie name">
+            <button class = "btn"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+    <p class="result hide"></p>
+    <div class = "resultContainer hide"></div>
+    <div class = "big-card hide"></div>
+ </main>
+ <script src="js/main.js" ></script>
+ </body>
+</html>
