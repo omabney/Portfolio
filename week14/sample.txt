@@ -1,0 +1,125 @@
+{"Search":
+    [{"Title":"Lucifer",
+      "Year":"2016–2021",
+      "imdbID":"tt4052886",
+      "Type":"series",
+      "Poster":"https://m.media-amazon.com/images/M/MV5BNDJjMzc4NGYtZmFmNS00YWY3LThjMzQtYzJlNGFkZGRiOWI1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg"
+     },
+     {"Title":"Lucifer",
+      "Year":"2019",
+      "imdbID":"tt6067752",
+      "Type":"movie",
+      "Poster":"https://m.media-amazon.com/images/M/MV5BMWUxNzgxYjktZjFhNS00YjljLWJiNjktMGQ3ZmMwNTA4YjA1XkEyXkFqcGdeQXVyNTI0NzU5ODc@._V1_SX300.jpg"
+      },
+      {"Title":"Lucifer Rising",
+      "Year":"1972",
+      "imdbID":"tt0066019",
+      "Type":"movie",
+      "Poster":"https://m.media-amazon.com/images/M/MV5BNGEzMWU5NDgtNDg1NC00YWFhLThiZmMtNGM1M2YwNDEyMTc1XkEyXkFqcGdeQXVyNzI2NzgzMzc@._V1_SX300.jpg"
+      },
+      {"Title":"The Lucifer Complex",
+      "Year":"1978",
+      "imdbID":"tt0077877",
+      "Type":"movie",
+      "Poster":"https://m.media-amazon.com/images/M/MV5BMjE5NWM1ODAtYzVmNC00MjUwLTk2ZGMtZjE2MjdhOThiYjk4XkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_SX300.jpg"
+      },
+      {"Title":"Underbelly Files: Tell Them Lucifer Was Here",
+       "Year":"2011",
+       "imdbID":"tt1684227",
+       "Type":"movie",
+       "Poster":"https://m.media-amazon.com/images/M/MV5BMTUxMTY4OTQ0M15BMl5BanBnXkFtZTcwOTAyOTM0NA@@._V1_SX300.jpg"
+     },
+     {"Title":"Lucifer",
+      "Year":"2014",
+      "imdbID":"tt4131206",
+      "Type":"movie",
+      "Poster":"https://m.media-amazon.com/images/M/MV5BMTQ3MTk5NTUyOF5BMl5BanBnXkFtZTgwMDM4MjUzNTE@._V1_SX300.jpg"
+      },
+      {"Title":"Meet Mr. Lucifer",
+       "Year":"1953",
+       "imdbID":"tt0046060",
+       "Type":"movie",
+       "Poster":"https://m.media-amazon.com/images/M/MV5BM2MyN2JhZWQtZGI1MC00MTk5LTlkZDktOTZkNDg0NzllOTBiXkEyXkFqcGdeQXVyNTgwNTk5MDU@._V1_SX300.jpg"
+       },
+       {"Title":"Lucifer",
+       "Year":"1987",
+       "imdbID":"tt0235555",
+       "Type":"movie",
+       "Poster":"https://m.media-amazon.com/images/M/MV5BZjNjODY5MjUtYjBmNC00YjRkLTk1OGMtYTkzZTVjZjAyZGMxXkEyXkFqcGdeQXVyMzU0NzkwMDg@._V1_SX300.jpg"
+     },
+     {"Title":"Lucifer",
+      "Year":"2007",
+      "imdbID":"tt0993770",
+      "Type":"movie",
+      "Poster":"https://m.media-amazon.com/images/M/MV5BMTgxNzE0MzA3NV5BMl5BanBnXkFtZTcwMjUxMTY0MQ@@._V1_SX300.jpg"
+     },
+     {"Title":"Comet Lucifer",
+      "Year":"2015–",
+      "imdbID":"tt5238484",
+      "Type":"series",
+      "Poster":"https://m.media-amazon.com/images/M/MV5BZjlmMDNkZGMtZWQ0NS00ZGVhLThmNzktNmUzZjQxOTkyNzBjXkEyXkFqcGdeQXVyOTA0MzY4MjY@._V1_SX300.jpg"
+    }],
+    "totalResults":"72",
+    "Response":"True"
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+{"Title":"Captain America: The First Avenger",
+ "Year":"2011",
+ "Rated":"PG-13",
+ "Released":"22 Jul 2011",
+ "Runtime":"124 min",
+ "Genre":"Action, Adventure, Sci-Fi",
+ "Director":"Joe Johnston",
+ "Writer":"Christopher Markus, Stephen McFeely, Joe Simon",
+ "Actors":"Chris Evans, Hugo Weaving, Samuel L. Jackson",
+ "Plot":"Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a \"Super-Soldier serum\". But being Captain America comes at a price as he attempts to take down a war monger and a terrorist organizati",
+ "Language":"English, Norwegian, French",
+ "Country":"United States",
+ "Awards":"4 wins & 46 nominations",
+ "Poster":"https://m.media-amazon.com/images/M/MV5BMTYzOTc2NzU3N15BMl5BanBnXkFtZTcwNjY3MDE3NQ@@._V1_SX300.jpg",
+ "Ratings":[{"Source":"Internet Movie Database","Value":"6.9/10"},
+            {"Source":"Rotten Tomatoes","Value":"80%"},
+            {"Source":"Metacritic","Value":"66/100"
+           }],
+ "Metascore":"66",
+ "imdbRating":"6.9",
+ "imdbVotes":"789,975",
+ "imdbID":"tt0458339",
+ "Type":"movie",
+ "DVD":"25 Oct 2011",
+ "BoxOffice":"$176,654,505",
+ "Production":"N/A",
+ "Website":"N/A",
+ "Response":"True"
+}
+
+-----------------------------------------------------------------
+
+Response {type: 'cors', url: 'https://www.omdbapi.com/?s=dfgsdf&apikey=c45ec1d', redirected: false, status: 200, ok: true, …}
+body: ReadableStream
+bodyUsed: false
+headers: Headers {}
+ok: true
+redirected: false
+status: 200
+statusText: ""
+type: "cors"
+url: "https://www.omdbapi.com/?s=dfgsdf&apikey=c45ec1d"
+[[Prototype]]: Response
+
+body: (...)
+bodyUsed: false
+headers: Headers
+[[Prototype]]: Headers
+ok: true
+redirected: false
+status: 200
+statusText: ""
+type: "cors"
+url: "https://www.omdbapi.com/?s=Lucifer&apikey=c45ec1d"
+[[Prototype]]: Response
+
+
+-------------------------------------------------------------------------------------------
